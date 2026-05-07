@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Career Journey</title>
+
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        <div class="browser">
+            <header class="top-bar">
+                <div class="window-dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+
+                <div class="tab">https://www...Yasniri Capst</div>
+
+                <div class="toolbar">
+                    <button class="nav-arrow" onclick="history.back()">‹</button>
+
+                    <button class="nav-arrow" onclick="history.forward()">›</button>
+
+                    <div class="url-bar">
+                        <span class="url-lock">⌕</span>
+
+                        <input
+                            id="searchInput"
+                            type="text"
+                            placeholder="Search: about, journey, experience, gallery, contact" />
+                    </div>
+
+                    <button class="go-btn" onclick="searchSite()">Go</button>
+                </div>
+            </header>
+
+            <main class="start-page">
+                <section class="hero">
+                    <h1 id="typingText" data-text="A Digital Window Into My Story"></h1>
+
+                    <h2>My Capstone Project</h2>
+
+                    <p class="hero-subtitle">
+                        A digital window into my story, experiences, creativity, and future goals.
+                    </p>
+
+                    <p id="searchMessage"></p>
+                </section>
+
+                <section class="favorites">
+                    <a href="home.html" class="favorite-card">
+                        <div class="icon">📖</div>
+                        <p>About</p>
+                    </a>
+
+                    <a href="journey.html" class="favorite-card">
+                        <div class="icon">🛤️</div>
+                        <p>Journey</p>
+                    </a>
+
+                    <a href="experience.html" class="favorite-card">
+                        <div class="icon">💼</div>
+                        <p>Experience</p>
+                    </a>
+
+                    <a href="gallery.html" class="favorite-card">
+                        <div class="icon">🖼️</div>
+                        <p>Gallery</p>
+                    </a>
+
+                    <a href="contact.html" class="favorite-card">
+                        <div class="icon">📄</div>
+                        <p>Contact/Resume</p>
+                    </a>
+                </section>
+
+                <section class="word-belt">
+                    <div class="word-track">
+                        <span>
+                            “Yas brings her light, energy and positivity to her work and to the people around her every
+                            day. I admire her diligence and perseverance in balancing school and work load in the best
+                            way possible.” — Emine, My Supervisor
+                        </span>
+
+                        <span>Quote</span>
+                        <span>Quote</span>
+                        <span>Quote</span>
+
+                        <span>
+                            “Yas brings her light, energy and positivity to her work and to the people around her every
+                            day.” — Emine, My Supervisor
+                        </span>
+
+                        <span>Quote</span>
+                        <span>Quote</span>
+                        <span>Quote</span>
+
+                        <span>Quote</span>
+                        <span>Quote</span>
+                        <span>Quote</span>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <script src="myscripts.js"></script>
+    </body>
+</html>
