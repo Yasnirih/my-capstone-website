@@ -509,10 +509,3 @@ body {
         padding: 15px;
     }
 }
-
-.dropdown.open .dropdown-content {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
