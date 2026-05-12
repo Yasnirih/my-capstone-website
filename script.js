@@ -98,19 +98,16 @@ function openFolder(folderName) {
       <ul>
         <li>Worked in a professional corporate environment</li>
         <li>Supported apprentice onboarding and events</li>
-        <li>Helped create organized materials and resources</li>
-        <li>Built communication and workplace skills</li>
+       
       </ul>
     `,
 
         marketing: `
       <h2>📁 Marketing Experience</h2>
-      <p>This folder shows my experience with communication, branding, and content.</p>
+      <p>This folder shows my experience with communication, blah, blah.</p>
       <ul>
         <li>Created professional messages and announcements</li>
-        <li>Helped organize marketing-related materials</li>
-        <li>Worked on presentations and visual layouts</li>
-        <li>Practiced making information clear and engaging</li>
+        
       </ul>
     `,
 
@@ -119,24 +116,17 @@ function openFolder(folderName) {
       <p>This folder includes the technical skills I have been building.</p>
       <ul>
         <li>HTML, CSS, and JavaScript</li>
-        <li>Website design and responsive layouts</li>
-        <li>GitHub and project organization</li>
-        <li>Experience with tools like VS Code and Phoenix Code</li>
       </ul>
     `,
 
         leadership: `
       <h2>📁 Leadership Experience</h2>
-      <p>This folder highlights moments where I supported and guided others.</p>
+      <p>This folder highlights </p>
       <ul>
-        <li>Helped mentor newer apprentices</li>
-        <li>Supported group activities and events</li>
-        <li>Practiced professional communication</li>
-        <li>Built confidence through teamwork and responsibility</li>
+        <li>blah</li>
       </ul>
     `
     };
 
     content.innerHTML = folders[folderName];
 }
-s;
