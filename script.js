@@ -96,8 +96,8 @@ function openFolder(folderName) {
       <h2>📁 Apprenticeship Experience</h2>
       <p>This folder highlights my work as a Youth Apprentice.</p>
       <ul>
-        <li>Worked in a professional corporate environment</li>
-        <li>Supported apprentice onboarding and events</li>
+        <li>Selected as the only apprentice to serve as a Communications Coach, providing structured communication guidance and professional writing feedback to 3+ year 1 youth apprentices</li>
+        <li>Supported onboarding of  20+ apprentices, facilitated cohort building events, developed an Excel training session, and provided peer mentorship and communication coaching to improve professional writing and workplace communication </li>
        
       </ul>
     `,
@@ -111,11 +111,11 @@ function openFolder(folderName) {
       </ul>
     `,
 
-        tech: `
-      <h2>📁 Tech Skills</h2>
-      <p>This folder includes the technical skills I have been building.</p>
+        idk: `
+      <h2>📁 ????</h2>
+      <p>This folder includes the ?????</p>
       <ul>
-        <li>HTML, CSS, and JavaScript</li>
+        <li>????</li>
       </ul>
     `,
 
