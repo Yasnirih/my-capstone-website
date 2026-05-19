@@ -59,29 +59,71 @@ body {
 }
 
 .toolbar {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    margin-top: 18px;
+    padding: 0 20px;
 }
 
-.toolbar button {
+.nav-arrow,
+.go-btn {
     border: none;
-    background: #eee9ff;
-    padding: 8px 12px;
-    border-radius: 50%;
     cursor: pointer;
+    transition: 0.25s;
+}
+
+.nav-arrow {
+    background: transparent;
+    font-size: 28px;
+    padding: 4px 10px;
+    color: #12233d;
+}
+
+.nav-arrow:hover {
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
 }
 
 .url-bar {
-    background: #f7f4ff;
-    border-radius: 20px;
-    padding: 10px 18px;
-    flex: 1;
-    color: #6d5a91;
+    width: 42%;
+    min-width: 320px;
+    max-width: 620px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 14px;
+}
+
+.url-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #12233d;
     font-size: 14px;
 }
 
+.go-btn {
+    height: 38px;
+    padding: 0 18px;
+    border-radius: 11px;
+    background: #12233d;
+    color: white;
+    font-weight: bold;
+}
+
+.go-btn:hover {
+    background: #3830c1;
+    transform: translateY(-2px);
+}
 .dropdown {
     position: absolute;
     right: 20px;

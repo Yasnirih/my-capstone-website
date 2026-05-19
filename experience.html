@@ -18,10 +18,19 @@
 
                 <div class="tab">https://www...Experience</div>
 
-                <div class="toolbar">
-                    <button onclick="history.back()">←</button>
-                    <button onclick="history.forward()">→</button>
-                    <div class="url-bar">Yasniri Herrera-Capstone.com/Experience</div>
+                 <div class="toolbar">
+                    <button class="nav-arrow" onclick="history.back()">‹</button>
+                    <button class="nav-arrow" onclick="history.forward()">›</button>
+
+                    <div class="url-bar">
+                        <span>⌕</span>
+                        <input
+                            id="searchInput"
+                            type="text"
+                            placeholder="Search: Home, About, Journey, Experience, Gallery, Contact" />
+                    </div>
+
+                    <button class="go-btn" onclick="searchSite()">Go</button>
                 </div>
 
                 <div class="dropdown">

@@ -38,12 +38,20 @@
                 </div>
             </div>
 
-            <div class="toolbar">
-                <button class="nav-arrow" onclick="history.back()">‹</button>
-                <button class="nav-arrow" onclick="history.forward()">›</button>
+           <div class="toolbar">
+                    <button class="nav-arrow" onclick="history.back()">‹</button>
+                    <button class="nav-arrow" onclick="history.forward()">›</button>
 
-                <div class="url-bar">Yasniri Herrera-Capstone.com/Gallery</div>
-            </div>
+                    <div class="url-bar">
+                        <span>⌕</span>
+                       <input
+                            id="searchInput"
+                            type="text"
+                            placeholder="Search: Home, About, Journey, Experience, Gallery, Contact" />
+                    </div>
+
+                    <button class="go-btn" onclick="searchSite()">Go</button>
+                </div>
 
             <section class="desktop">
                 <div class="mini-window gallery-window">

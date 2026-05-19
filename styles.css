@@ -234,7 +234,7 @@ body {
     display: flex;
     gap: 28px;
     width: max-content;
-    animation: conveyor 12s linear infinite;
+    animation: conveyor 27s linear infinite;
 }
 
 .word-track:hover {

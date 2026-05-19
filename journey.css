@@ -71,36 +71,74 @@ body {
 }
 
 .toolbar {
-    width: 85%;
-    max-width: 950px;
-    margin: 16px auto 0;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    padding: 0 20px;
 }
 
-.toolbar button {
-    width: 36px;
-    height: 36px;
+.nav-arrow,
+.go-btn {
     border: none;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.45);
-    color: #5c4185;
-    font-size: 1.5rem;
     cursor: pointer;
+    transition: 0.25s;
+}
+
+.nav-arrow {
+    background: transparent;
+    font-size: 28px;
+    padding: 4px 10px;
+    color: #12233d;
+}
+
+.nav-arrow:hover {
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
 }
 
 .url-bar {
-    flex: 1;
-    padding: 12px 18px;
-    border-radius: 25px;
-    background: rgba(255, 255, 255, 0.55);
-    color: #5c4185;
-    font-size: 0.9rem;
+    width: 42%;
+    min-width: 320px;
+    max-width: 620px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 14px;
+}
+
+.url-bar input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #12233d;
+    font-size: 14px;
+}
+
+.go-btn {
+    height: 38px;
+    padding: 0 18px;
+    border-radius: 11px;
+    background: #12233d;
+    color: white;
+    font-weight: bold;
+}
+
+.go-btn:hover {
+    background: #3830c1;
+    transform: translateY(-2px);
 }
 
 .dropdown {
-    position: absolute;
+    position: relative;
     top: 14px;
     right: 22px;
 }
