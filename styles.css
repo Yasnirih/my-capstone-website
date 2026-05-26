@@ -20,6 +20,70 @@ body {
     color: #12233d;
 }
 
+/* APPLE HELLO INTRO SCREEN */
+
+#intro-screen {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 9999999;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+
+.intro-gif {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.65;
+    z-index: 1;
+}
+
+.hello-text {
+    position: relative;
+    z-index: 2;
+    font-family: "chomsky", serif;
+    font-size: clamp(70px,12vw,150px);
+
+    color: transparent;
+    -webkit-text-stroke: 2px #9610e9;
+
+    animation: helloFloat 2.8s ease forwards;
+}
+
+#intro-screen.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@keyframes helloFloat {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    35% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    75% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+}
+
 .browser {
     width: 100%;
     min-height: 100vh;
@@ -159,7 +223,7 @@ body {
     font-size: 42px;
     line-height: 1.15;
     margin-bottom: 10px;
-    color: #12233d;
+    color: #eddddd;
     font-weight: bold;
 }
 
@@ -331,6 +395,11 @@ body {
     cursor: pointer;
 }
 
+h1 {
+    font-family: "chomsky", serif;
+    font-size: 60px;
+}
+
 @keyframes conveyor {
     from {
         transform: translateX(0);
@@ -393,11 +462,3 @@ body {
         padding: 20px;
     }
 }
-
-
-h1{
-    font-family:"chomsky", serif;
-font-size: 60px;
-}
-
-

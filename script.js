@@ -13,6 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
     setUpSearchBar();
     setUpMobileMenu();
     setUpQuoteModal();
+    setUpGalleryFilters();
 });
 
 function startTypingText() {
@@ -87,6 +88,7 @@ function setUpMobileMenu() {
 
     dropButton.addEventListener("click", function (event) {
         event.preventDefault();
+        event.stopPropagation();
         dropdown.classList.toggle("open");
     });
 
@@ -141,28 +143,53 @@ function openFolder(folderName) {
     content.innerHTML = folders[folderName];
 }
 
+/* GALLERY FILTER */
+
+function setUpGalleryFilters() {
+    const columns = document.querySelectorAll(".column");
+    const buttons = document.querySelectorAll(".filter-buttons .btn");
+
+    if (!columns.length || !buttons.length) return;
+
+    filterSelection("all");
+
+    buttons.forEach(function (button) {
+        button.addEventListener("click", function () {
+            buttons.forEach(function (btn) {
+                btn.classList.remove("active");
+            });
+
+            button.classList.add("active");
+        });
+    });
+}
+
+function filterSelection(category) {
+    const columns = document.querySelectorAll(".column");
+
+    columns.forEach(function (column) {
+        column.classList.remove("show");
+
+        if (category === "all" || column.classList.contains(category)) {
+            column.classList.add("show");
+        }
+    });
+}
+
 /* SEE MORE QUOTE POPUP */
 
-/* SEE MORE BUTTON */
-
 function openQuote(button) {
-    // find the parent quote card
     const card = button.closest(".quote-card");
 
     if (!card) return;
 
-    // grab quote text inside card
     const quoteText = card.querySelector("p").innerText;
-
-    // put text inside popup
     const fullQuote = document.getElementById("fullQuoteText");
     const modal = document.getElementById("quoteModal");
 
     if (!fullQuote || !modal) return;
 
     fullQuote.innerText = quoteText;
-
-    // show popup
     modal.classList.add("active");
 }
 
@@ -174,15 +201,30 @@ function closeQuote() {
     modal.classList.remove("active");
 }
 
-/* close when clicking outside popup */
-document.addEventListener("DOMContentLoaded", function () {
+function setUpQuoteModal() {
     const modal = document.getElementById("quoteModal");
 
-    if (modal) {
-        modal.addEventListener("click", function (event) {
-            if (event.target === modal) {
-                closeQuote();
-            }
-        });
-    }
+    if (!modal) return;
+
+    modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            closeQuote();
+        }
+    });
+}
+
+/* INTRO SCREEN */
+
+window.addEventListener("load", function () {
+    const introScreen = document.getElementById("intro-screen");
+
+    if (!introScreen) return;
+
+    setTimeout(function () {
+        introScreen.style.opacity = "0";
+
+        setTimeout(function () {
+            introScreen.style.display = "none";
+        }, 1000);
+    }, 3000);
 });
