@@ -71,7 +71,7 @@
                         <div id="myBtnContainer" class="filter-buttons">
                             <button class="btn active" onclick="filterSelection('all')">Show all</button>
                             <button class="btn" onclick="filterSelection('Friends')">Friends</button>
-                            <button class="btn" onclick="filterSelection('Events')">Events</button>
+                            <button class="btn" onclick="filterSelection('Events')">Events/Work</button>
                             <button class="btn" onclick="filterSelection('outside')">Life outside of work</button>
                             <button class="btn" onclick="filterSelection('School')">School</button>
                         </div>
@@ -87,7 +87,7 @@
 
                             <div class="column Friends">
                                 <div class="content">
-                                    <img src="images/friends2.jpg" alt="Friends" />
+                                    <img src="https://cdn.corenexis.com/files/c/7591527720.jpg" alt="Friends" />
                                     <h4>Friends</h4>
                                     <p>Change this text later.</p>
                                 </div>
@@ -167,7 +167,7 @@
 
                             <div class="column School">
                                 <div class="content">
-                                    <img src="images/school3.jpg" alt="School" />
+                                    <img class="gallery-img" src="images/school3.jpg" alt="School" />
                                     <h4>School</h4>
                                     <p>Change this text later.</p>
                                 </div>
@@ -177,7 +177,11 @@
                 </div>
             </section>
         </div>
-
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+</div>
         <script src="script.js"></script>
     </body>
 </html>

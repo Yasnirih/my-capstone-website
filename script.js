@@ -220,11 +220,15 @@ window.addEventListener("load", function () {
 
     if (!introScreen) return;
 
-    setTimeout(function () {
-        introScreen.style.opacity = "0";
+    document.addEventListener("click", function () {
+
+        introScreen.classList.add("start");
 
         setTimeout(function () {
-            introScreen.style.display = "none";
-        }, 1000);
-    }, 3000);
+            introScreen.classList.add("hide");
+        }, 3000);
+
+    }, { once: true });
+
 });
+

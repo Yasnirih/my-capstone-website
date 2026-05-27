@@ -543,3 +543,31 @@ body {
     visibility: visible;
     transform: translateY(0);
 }
+
+h4{
+ font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: bold;
+}
+
+h1{
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: bold;  
+  font-size:50px;
+}
+
+h3{
+     font-family: "Great Vibes", cursive;
+font-weight: 700px;  
+font-style: bold;  
+  
+}
+
+p{
+    font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: bold;
+}
