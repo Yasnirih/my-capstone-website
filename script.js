@@ -109,13 +109,13 @@ function openFolder(folderName) {
             <h2>📁 Apprenticeship Experience</h2>
             <p>This folder highlights my work as a Youth Apprentice.</p>
             <ul>
-                <li>Selected as the only apprentice to serve as a Communications Coach, providing structured communication guidance and professional writing feedback to 3+ year 1 youth apprentices.</li>
-                <li>Supported onboarding of 20+ apprentices, facilitated cohort building events, developed an Excel training session, and provided peer mentorship.</li>
+                <li>Completed a comprehensive 250+ hour training program focused on building essential Power Skills for professional growth.</li>
+                <li>Completed 64+ hour training focused on Accenture’s methodology and team collaboration. </li>
             </ul>
         `,
 
-        marketing: `
-            <h2>📁 Marketing Experience</h2>
+        panel: `
+            <h2>📁 Panels</h2>
             <p>This folder shows my experience with communication and creative projects.</p>
             <ul>
                 <li>Created professional messages and announcements.</li>
@@ -124,25 +124,46 @@ function openFolder(folderName) {
         `,
 
         idk: `
-            <h2>📁 ????</h2>
+            <h2>📁 Marketing + Communications</h2>
             <p>This folder includes future content you can add later.</p>
             <ul>
-                <li>????</li>
+                <li>Supported pre launch updates to the TIFF 2026 Accenture Gala Screening and Reception website tracker, contributing to a high visibility client event generating 200+ account leads</li>
+<li> Maintained and optimized Excel trackers for Canada AI Leaders (CALs) to support accurate internal coordination, engagement, and communications</li>
+<li>Reimagined the Accenture Canada “Who We Are” webpage, refreshing content and structure to better reflect brand identity, values, and organizational direction</li>
+<li>Drafted and coordinated internal communications to CALs, tailoring messaging to drive engagement and timely information sharing
+
             </ul>
         `,
 
-        leadership: `
-            <h2>📁 Leadership Experience</h2>
-            <p>This folder highlights leadership and teamwork experiences.</p>
-            <ul>
-                <li>Supported peers through mentorship and communication coaching.</li>
+        "core team": `
+            <h2>📁 Core Team Experience</h2>
+            <p>This folder highlights the work that I've done with the core team.</p>
+           <ul>
+                <li>Selected as the only apprentice to serve as a Communications Coach, providing structured communication guidance and professional writing feedback to 3+ year 1 youth apprentices.</li>
+                <li>Supported onboarding of 20+ apprentices, facilitated cohort building events, developed an Excel training session, and provided peer mentorship.</li>
             </ul>
         `,
          Certifications: `
             <h2>📁 Certifications</h2>
-            <p>This folder includes future content you can add later.</p>
+            <p>This folder contains my certifications I've gotten over the years!</p>
             <ul>
-                <li>????</li>
+                <li>
+ Marketing Fundamentals – Udacity, 2026,</li>
+                <li>
+AI Product Manager Nanodegree – Udacity, 2026,</li>
+                <li>
+SQL Nanodegree — Udacity, 2026,</li>
+<li>
+AWS Partner: Accreditation (Technical) — Amazon Web Services, 2025,</li>
+<li>
+AWS Generative AI Certification — Amazon Web Services, 2025,</li>
+<li>
+SQL Fluency Certification — Udacity, 2025,</li>
+<li>
+Reinvention with Agentic AI — Stanford HAI / Accenture, 2025, </li>
+<li>
+HTML5 Application Development Specialist — Certiport, 2024
+</li>
             </ul>
         `
     };

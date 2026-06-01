@@ -305,3 +305,35 @@ body {
         margin-top: 15px;
     }
 }
+
+
+h1{
+    font-family: "Great Vibes", cursive;
+  font-weight: 700;
+  font-style: cursive;
+}
+
+p{
+   font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: bold;
+}
+
+h2{
+  font-family: "Petit Formal Script", cursive;
+font-size: 28px;
+  font-style: normal;
+}
+
+li{
+    font-family: "Englebert", cursive;
+  font-style: normal;
+  font-size: 18px;
+}
+
+a{
+    font-family: "Petit Formal Script", cursive;
+  font-style: bold;  
+  font-size: 18px;
+}
