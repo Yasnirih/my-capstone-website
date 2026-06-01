@@ -137,6 +137,13 @@ function openFolder(folderName) {
             <ul>
                 <li>Supported peers through mentorship and communication coaching.</li>
             </ul>
+        `,
+         Certifications: `
+            <h2>📁 Certifications</h2>
+            <p>This folder includes future content you can add later.</p>
+            <ul>
+                <li>????</li>
+            </ul>
         `
     };
 
