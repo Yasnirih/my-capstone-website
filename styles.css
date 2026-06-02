@@ -529,3 +529,9 @@ p {
     font-style: normal;
     font-size: 20px;
 }
+
+a{
+    font-family: "Petit Formal Script", cursive;
+  font-style: bold;  
+  font-size: 18px;
+}

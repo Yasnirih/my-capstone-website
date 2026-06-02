@@ -571,3 +571,9 @@ p{
   font-weight: 400;
   font-style: bold;
 }
+
+a{
+    font-family: "Petit Formal Script", cursive;
+  font-style: bold;  
+  font-size: 18px;
+}

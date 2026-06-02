@@ -5,16 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Experience</title>
         <link rel="stylesheet" href="experience.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Marck+Script&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Marck+Script&family=Petit+Formal+Script&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond family=Englebert&family=Great+Vibes&family=Marck+Script&family=Petit+Formal+Script&family=Petrona:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Englebert&family=Great+Vibes&family=Petit+Formal+Script&display=swap" rel="stylesheet" />
+    </head>
 
     <body>
         <div class="browser">
@@ -27,7 +22,7 @@
 
                 <div class="tab">https://www...Experience</div>
 
-                 <div class="toolbar">
+                <div class="toolbar">
                     <button class="nav-arrow" onclick="history.back()">‹</button>
                     <button class="nav-arrow" onclick="history.forward()">›</button>
 
@@ -58,6 +53,12 @@
             <main class="experience-page">
                 <section class="explorer-window">
                     <div class="explorer-header">
+                        <div class="mini-dots">
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+                        </div>
+
                         <h1>My Experience</h1>
                         <p>Click a folder to open it ✨</p>
                     </div>
@@ -72,27 +73,27 @@
                         </aside>
 
                         <section class="folder-area">
-                            <div class="folder" onclick="openFolder('apprenticeship')">
+                            <div class="folder" onclick="openFolder('apprenticeship', this)">
                                 <div class="folder-icon">🗃️</div>
                                 <p>Youth Apprenticeship</p>
                             </div>
 
-                            <div class="folder" onclick="openFolder('panel')">
+                            <div class="folder" onclick="openFolder('panel', this)">
                                 <div class="folder-icon">🗃️</div>
                                 <p>Panels</p>
                             </div>
 
-                            <div class="folder" onclick="openFolder('idk')">
+                            <div class="folder" onclick="openFolder('idk', this)">
                                 <div class="folder-icon">🗃️</div>
                                 <p>M + C</p>
                             </div>
 
-                            <div class="folder" onclick="openFolder('core team')">
+                            <div class="folder" onclick="openFolder('core team', this)">
                                 <div class="folder-icon">🗃️</div>
                                 <p>Core Team</p>
                             </div>
 
-                             <div class="folder" onclick="openFolder('Certifications')">
+                            <div class="folder" onclick="openFolder('Certifications', this)">
                                 <div class="folder-icon">🗃️</div>
                                 <p>Certifications</p>
                             </div>

@@ -23,17 +23,22 @@ body {
     padding: 15px;
 }
 
-.window-dots {
+.window-dots,
+.mini-dots {
     display: flex;
     gap: 8px;
+}
+
+.window-dots {
     position: absolute;
     top: 18px;
     left: 18px;
 }
 
-.window-dots span {
-    width: 14px;
-    height: 14px;
+.window-dots span,
+.mini-dots span {
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     display: block;
 }
@@ -41,15 +46,17 @@ body {
 .red {
     background: #ff5f57;
 }
+
 .yellow {
     background: #ffbd2e;
 }
+
 .green {
     background: #28c840;
 }
 
 .tab {
-    background: #e8e3ff;
+    background: rgba(151, 140, 225, 0.9);
     width: fit-content;
     padding: 10px 25px;
     border-radius: 14px 14px 0 0;
@@ -124,6 +131,7 @@ body {
     background: #3830c1;
     transform: translateY(-2px);
 }
+
 .dropdown {
     position: absolute;
     right: 20px;
@@ -167,14 +175,14 @@ body {
 }
 
 .experience-page {
-    padding: 40px 20px;
+    padding: 150px 120px 100px;
     display: flex;
     justify-content: center;
 }
 
 .explorer-window {
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 2000px;
     background: rgba(255, 255, 255, 0.75);
     backdrop-filter: blur(12px);
     border-radius: 25px;
@@ -248,7 +256,13 @@ body {
 
 .folder:hover {
     background: #eee7ff;
-    transform: translateY(-5px);
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 0 20px rgba(141, 123, 255, 0.45);
+}
+
+.folder.active {
+    background: white;
+    box-shadow: 0 0 18px rgba(167, 137, 222, 0.6);
 }
 
 .folder-icon {
@@ -267,22 +281,83 @@ body {
     padding: 25px;
     color: #4b3b73;
     box-shadow: inset 0 0 0 2px #eadfff;
+    border: 2px solid #eadfff;
 }
 
 .folder-content h2 {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
-.folder-content ul {
-    margin-left: 20px;
-    margin-top: 10px;
+.experience-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 15px;
 }
 
-.folder-content li {
-    margin-bottom: 8px;
+.experience-item {
+    background: white;
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 8px 18px rgba(70, 45, 120, 0.12);
+    transition: 0.3s ease;
 }
+
+.experience-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 18px rgba(167, 137, 222, 0.4);
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    border-radius: 15px;
+    border: 2px dashed #b7afed;
+    background: #f3edff;
+    color: #7a65b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Englebert", cursive;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+/* Fonts */
+
+h1 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 25px;
+}
+
+h2 {
+    font-family: "Petit Formal Script", cursive;
+    font-size: 28px;
+    font-style: normal;
+}
+
+li {
+    font-family: "Englebert", cursive;
+    font-size: 18px;
+}
+
+a {
+    font-family: "Petit Formal Script", cursive;
+    font-size: 18px;
+}
+
+/* Mobile */
 
 @media (max-width: 750px) {
+    .experience-page {
+        padding: 130px 20px 60px;
+    }
+
     .file-explorer {
         flex-direction: column;
     }
@@ -304,36 +379,29 @@ body {
         position: static;
         margin-top: 15px;
     }
+
+    .url-bar {
+        min-width: 180px;
+        width: 60%;
+    }
+
+    .experience-items {
+        grid-template-columns: 1fr;
+    }
 }
 
-
-h1{
-    font-family: "Great Vibes", cursive;
-  font-weight: 700;
-  font-style: cursive;
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+    display: block;
 }
 
-p{
-   font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: bold;
-}
-
-h2{
-  font-family: "Petit Formal Script", cursive;
-font-size: 28px;
-  font-style: normal;
-}
-
-li{
-    font-family: "Englebert", cursive;
-  font-style: normal;
-  font-size: 18px;
-}
-
-a{
-    font-family: "Petit Formal Script", cursive;
-  font-style: bold;  
-  font-size: 18px;
+.folder-img {
+    width: 100%;
+    height: 150px;
+    object-fit: fill;
+    border-radius: 15px;
+    margin-bottom: 12px;
 }

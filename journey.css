@@ -461,3 +461,9 @@ padding-right: 15px;
         height: 32px;
     }
 }
+
+a{
+    font-family: "Petit Formal Script", cursive;
+  font-style: bold;  
+  font-size: 18px;
+}
