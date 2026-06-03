@@ -111,13 +111,11 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-                    <div class="image-placeholder">Add Image Here</div>
-                    <p>Completed a comprehensive 250+ hour training program focused on building essential Power Skills for professional growth.</p>
+<img src="https://cdn.corenexis.com/files/c/3191749720.png" alt="Apprenticeship Experience" class="apprenticeship-img">                    <p>Teachbacks!</p>
                 </div>
 
                 <div class="experience-item">
-                    <div class="image-placeholder">Add Image Here</div>
-                    <p>Completed 64+ hour training focused on Accenture’s methodology and team collaboration.</p>
+<img src="images/apprenticeship1.png" alt="Apprenticeship Experience" class="apprenticeship-img">                    <p>Completed 64+ hour training focused on Accenture’s methodology and team collaboration.</p>
                 </div>
             </div>
         `,
@@ -128,13 +126,13 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-                    <div class="image-placeholder">Add Image Here</div>
-                    <p>Created professional messages and announcements.</p>
+<img src="https://cdn.corenexis.com/files/c/9769416720.png" alt="Panel Event" class="panel-img">                    
+<p>Careerwise Panel - December 2024</p>
                 </div>
 
                 <div class="experience-item">
-                    <div class="image-placeholder">Add Image Here</div>
-                    <p>Helped support branding, communication, and presentation work.</p>
+                    <img src="https://cdn.corenexis.com/files/c/5748638720.png" alt="Panel Event" class="panel-img">
+                    <p>Swiss Consulate 2025</p>
                 </div>
             </div>
         `,

@@ -53,8 +53,7 @@ body {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 6rem;
-    letter-spacing: 4px;
+font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
     color: rgb(0, 0, 0);
     text-align: center;
 
@@ -534,4 +533,9 @@ a{
     font-family: "Petit Formal Script", cursive;
   font-style: bold;  
   font-size: 18px;
+}
+
+
+input {
+    font-family: "Englebert", cursive;
 }

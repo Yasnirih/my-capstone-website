@@ -137,6 +137,7 @@ body {
     background: #3830c1;
     transform: translateY(-2px);
 }
+
 .dropdown {
     position: absolute;
     top: 12px;
@@ -182,15 +183,17 @@ body {
 }
 
 .desktop {
-    width: 92%;
-    max-width: 1150px;
-    margin: 70px auto;
+    width: 97%;
+    max-width: 1600px;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 40px;
 }
 
 .mini-window {
+    width: 100%;
+    min-height: 500px;
     background: rgba(255, 255, 255, 0.22);
     backdrop-filter: blur(18px);
     border: 1px solid rgba(255, 255, 255, 0.35);
@@ -220,17 +223,18 @@ body {
 }
 
 .mini-content {
-    padding: 28px;
+    padding: 45px;
 }
 
 .about-layout {
     display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 30px;
+    grid-template-columns: 380px 1fr;
+    gap: 45px;
     align-items: center;
 }
 
 .photo-card {
+    max-width: 380px;
     background: rgba(255, 255, 255, 0.35);
     padding: 14px;
     border-radius: 24px;
@@ -249,7 +253,7 @@ body {
 }
 
 .about-text p {
-    font-size: 17px;
+    font-size: 20px;
     line-height: 1.6;
     margin-bottom: 12px;
     font-weight: 600;
@@ -275,12 +279,12 @@ body {
 }
 
 .fact-card h3 {
-    font-size: 20px;
+    font-size: 35px;
     margin-bottom: 12px;
 }
 
 .fact-card p {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.55;
     font-weight: 600;
 }
@@ -544,36 +548,34 @@ body {
     transform: translateY(0);
 }
 
-h4{
- font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: bold;
-}
+/* Fonts - matching Experience page */
 
-h1{
+h1,
+#typingText {
     font-family: "Great Vibes", cursive;
-  font-weight: 400;
-  font-style: bold;  
-  font-size:50px;
+    font-weight: 400;
+    font-size: 100px;
 }
 
-h3{
-     font-family: "Great Vibes", cursive;
-font-size:25px;
-font-style: bold;  
-  
-}
-
-p{
-    font-family: "Cormorant Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: bold;
-}
-
-a{
+h2,
+a {
     font-family: "Petit Formal Script", cursive;
-  font-style: bold;  
-  font-size: 18px;
 }
+
+h3 {
+    font-family: "Great Vibes", cursive;
+    font-size: 25px;
+}
+
+h4,
+p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 18px;
+}
+
+li,
+button,
+input {
+    font-family: "Englebert", cursive;
+}
+

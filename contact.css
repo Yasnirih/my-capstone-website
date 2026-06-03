@@ -472,3 +472,7 @@ body {
         transform: translateY(0);
     }
 }
+
+input {
+    font-family: "Englebert", cursive;
+}

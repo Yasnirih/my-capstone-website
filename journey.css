@@ -467,3 +467,7 @@ a{
   font-style: bold;  
   font-size: 18px;
 }
+
+input {
+    font-family: "Englebert", cursive;
+}
