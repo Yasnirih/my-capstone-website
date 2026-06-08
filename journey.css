@@ -347,18 +347,19 @@ padding-right: 15px;
     margin-bottom: 10px;
     padding: 7px 14px;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(151, 157, 229, 0.109);
 color:rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
          font-family: "Petit Formal Script", cursive;
+    box-shadow: 0 12px 30px rgba(55, 30, 95, 0.22);
 
 }
 
 .content {
     padding: 22px;
     border-radius: 24px;
-    background: rgba(255, 255, 255, 0.32);
+    background: rgba(151, 157, 229, 0.109);
     border: 1px solid rgba(255, 255, 255, 0.45);
     box-shadow: 0 12px 30px rgba(55, 30, 95, 0.22);
     transition:
