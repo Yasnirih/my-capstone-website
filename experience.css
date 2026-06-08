@@ -464,3 +464,34 @@ input {
         0 0 32px rgba(141, 123, 255, 0.5);
 }
 
+
+.marketing-img {
+    width: 100%;
+    max-width: 800px;
+
+    height: 420px;
+
+    object-fit: fill;
+    object-position: center;
+
+    border-radius: 24px;
+    margin: 0 auto 22px;
+
+    display: block;
+
+    border: 2px solid rgba(255, 255, 255, 0.4);
+
+    box-shadow:
+        0 14px 30px rgba(70, 45, 120, 0.24),
+        0 0 26px rgba(141, 123, 255, 0.22);
+
+    transition: 0.3s ease;
+}
+
+.marketing-img:hover {
+    transform: translateY(-5px) scale(1.015);
+
+    box-shadow:
+        0 20px 38px rgba(70, 45, 120, 0.3),
+        0 0 32px rgba(141, 123, 255, 0.5);
+}

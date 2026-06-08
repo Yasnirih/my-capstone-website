@@ -264,7 +264,7 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 }
 
 #typingText {
-    font-family: "Great Vibes", cursive;
+          font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -439,7 +439,7 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 }
 
 h1 {
-    font-family: "chomsky", serif;
+     font-family: "Cormorant Garamond";
     font-size: 60px;
 }
 

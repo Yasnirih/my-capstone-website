@@ -197,14 +197,15 @@ padding-right: 15px;
 
 .journey-window {
     width: 92%;
-    max-width: 1050px;
-    max-height: 720px;
+    max-width: 2070px;
+    max-height: 1600px;
     overflow-y: auto;
     border-radius: 28px;
     background: rgba(255, 255, 255, 0.24);
     backdrop-filter: blur(18px);
     border: 1px solid rgba(255, 255, 255, 0.45);
     box-shadow: 0 20px 45px rgba(54, 28, 90, 0.3);
+    
 }
 
 .window-header {
@@ -220,17 +221,26 @@ padding-right: 15px;
     gap: 18px;
     border-radius: 28px 28px 0 0;
     font-weight: bold;
+
 }
 
+
+.window-header p{
+      font-family: "Great Vibes", cursive;
+
+}
 .journey-intro {
     text-align: center;
     padding: 45px 25px 25px;
 }
 
 .journey-intro h1 {
-    font-size: 2.7rem;
+    font-size: 70px;
     margin-bottom: 12px;
     text-shadow: 0 4px 14px rgba(75, 40, 120, 0.25);
+          font-family: "Great Vibes", cursive;
+          color:rgb(255, 255, 255);
+
 }
 
 .journey-intro p {
@@ -267,7 +277,7 @@ padding-right: 15px;
 
 .timeline-card.left {
     left: 0;
-    text-align: right;
+    text-align: left;
 }
 
 .timeline-card.right {
@@ -338,9 +348,11 @@ padding-right: 15px;
     padding: 7px 14px;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.4);
-    color: white;
+color:rgb(255, 255, 255);
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 20px;
+         font-family: "Petit Formal Script", cursive;
+
 }
 
 .content {
@@ -360,13 +372,19 @@ padding-right: 15px;
 }
 
 .content h2 {
-    font-size: 1.25rem;
+    font-size: 35px;;
     margin-bottom: 10px;
+     font-family: "Petit Formal Script", cursive;
+ font-style: normal;
+color:rgb(255, 255, 255);
+        text-shadow: 0 4px 14px rgba(11, 3, 20, 0.25);
+
 }
 
 .content p {
-    font-size: 0.95rem;
+    font-size: 29px;
     line-height: 1.6;
+     text-shadow: 0 4px 14px rgba(11, 3, 20, 0.25);
 }
 
 .journey-window::-webkit-scrollbar {
@@ -464,10 +482,31 @@ padding-right: 15px;
 
 a{
     font-family: "Petit Formal Script", cursive;
+    
   font-style: bold;  
   font-size: 18px;
 }
 
 input {
     font-family: "Englebert", cursive;
+}
+
+.font{
+          font-family: "Great Vibes", cursive;
+font-size: 35px;
+color:black;
+}
+
+p{
+     font-family: "Cormorant Garamond";
+    font-size: 30px;
+color:rgb(255, 255, 255);
+        text-shadow: 0 4px 14px rgba(11, 3, 20, 0.25);
+
+}
+
+.top{
+        font-family: "Petit Formal Script", cursive;
+        text-shadow: 0 4px 14px rgba(11, 3, 20, 0.25);
+
 }

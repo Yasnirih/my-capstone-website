@@ -250,8 +250,7 @@ body {
 /* DESKTOP */
 
 .desktop{
-    min-height:calc(90vh - 55px);
-
+max-height:3000px;
     padding:80px 50px 50px;
 
     background:transparent;
@@ -439,4 +438,10 @@ width:65%;
 
 input {
     font-family: "Englebert", cursive;
+}
+
+.gallery-window{
+    width: 100%;
+    max-width: 2070px;
+    max-height: 4700px;
 }
