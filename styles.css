@@ -270,7 +270,7 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 }
 
 .hero h2 {
-    font-size: 32px;
+    font-size: 65px;
     margin-bottom: 14px;
     font-family: "Great Vibes", cursive;
     font-weight: 400;
@@ -440,7 +440,7 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 
 h1 {
      font-family: "Cormorant Garamond";
-    font-size: 60px;
+    font-size: 80px;
 }
 
 @keyframes conveyor {

@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
     setUpSearchBar();
     setUpMobileMenu();
     setUpQuoteModal();
-    setUpGalleryFilters();
+    setUpGalleryPopups();
 });
 
 function startTypingText() {
@@ -111,13 +111,13 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-<img src="https://cdn.corenexis.com/files/c/3191749720.png" alt="Apprenticeship Experience" class="apprenticeship-img">                   
- <p>Teachbacks ~ 10-15 minute presentations about my choosen topic</p>
+                    <img src="https://cdn.corenexis.com/files/c/3191749720.png" alt="Apprenticeship Experience" class="apprenticeship-img">                   
+                    <p>Teachbacks ~ 10-15 minute presentations about my chosen topic</p>
                 </div>
 
                 <div class="experience-item">
-<img src="images/apprenticeship1.png" alt="Apprenticeship Experience" class="apprenticeship-img">                    
-<p>Foundational Traininng ~ 64+ hour training focused on Accenture’s methodology and team collaboration.</p>
+                    <img src="images/apprenticeship1.png" alt="Apprenticeship Experience" class="apprenticeship-img">                    
+                    <p>Foundational Training ~ 64+ hour training focused on Accenture’s methodology and team collaboration.</p>
                 </div>
             </div>
         `,
@@ -128,8 +128,8 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-<img src="https://cdn.corenexis.com/files/c/9769416720.png" alt="Panel Event" class="panel-img">                    
-<p>Careerwise Panel - December 2024</p>
+                    <img src="https://cdn.corenexis.com/files/c/9769416720.png" alt="Panel Event" class="panel-img">                    
+                    <p>Careerwise Panel - December 2024</p>
                 </div>
 
                 <div class="experience-item">
@@ -145,12 +145,12 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-                    <div><img src="data:image/webp;base64,UklGRoIFAABXRUJQVlA4IHYFAADQJgCdASquAMYAPp1KoUslpKOhprgJ+LATiWlu3/slIBMbhS36v/X/8B4cdY2vRtT/3jvVllRLuRT9uMLx6TvJfuH/v3/5G7V5E/sMRWlAJym+aFtEppkXdWVqQ/xZnm1/kMF/cKh6sbxTY9yOmeM4KNqjsmCpaoNzSmcvUEHr6rIkFURiWbuRsuSaw/S0Faey1kIPyzAt8EJ10PuDhcL8kEXvVX/KrCekpDWwM5s80OoSti8oXkEJ8KIDp3doZGxq1xSIU68Y4Ea21NxBVgNPsooJthd4DqHeqxuXGfz7XW1rp5ywIJKMrBHSsxUhXVq8yBTwjgDCXHzyz948A7prD9LQVpnTfbfWvtHgHdNYRrhdGylO9zUjhd0ZhDjn4dxLlFV59JeNUSHlHOXcnnw/akSNlKd7mpCYWpEjZUbAAP4YSynj8LOYPJaKv80A6a9AbqP8ziSJ3jxPSZLMtpZAQtSEdmkmE+55jKmj13c90lQIMpG2PO9yAfa1tXMTESF86cz6813ROORc23CmMfKCPC6U+YziZjogxPyat9cnGbt75b4CxSNP8U/9IXJE5Mtl71kRnDVBpBin1ri5rtDFyEH/tBLqn2cOza3JNdxFN83m/PZDmmXck3i+dZTIim8DlknIPK2T1O/Por9z2Cmlw/Ntj+Vexm/9P276pqN6QSG5JBTjLJk4ixG4/Y8CS53nPo/2xVpsuoq/plq207I6Y+dvyF+zXfrEce/JJvl+oXSnmQfiWEurQri0016B4jd3n3XSxbcHOcsZ1vjvHmCzCNEdDBt1msJWLx/aPieyy0g9TusmlsK1p4ShT9ASpmDOMaTfpOmAtSix2CZE0GLGEoDp9hT6ne7eAaZwhwVQBf7aIECCM47YkntlSASajekzbsM8NsmmmvQPgRhMeQd+trNUsMAQ0heDROSeUBA1aph60YfGScaopOVB7iiSGqEQYOKZ788kk1jgz2+4Ds/GudsdfGLTFIy993oBXAt8EK90Jphlfvh1Wso+MgfXtEIM0HTurm2oXXsVU+CIAXzESnGyRtjUfFcQlNEf1IrOL+o7FoH17G8BwrwQi6NF4L7kfESLp3k80kzqjwZZYtcv3Ioh3oFbzfIZXZ6ha5NoBk7FJgKTt/X99tP5nKjaMf+J1nFroDcOUdvz+hGQe6KG4OCozkbobV+pUkXX2sxoauuWfYLsir6hDIHzcecSYhYOl38c1diwx8fbXz98llUzkBdCSasCZ4uPpzarO7yzPLenL4ZS3Fv3Lt6+LtuOUJcEWd+Bc8QMJQuNOIDBWer84W+gOR/QLhl2tXBlYgu5IRllxuTXdhpNYdKBVcWuZ2/x1SXIX73cLKXdH9tn4sTSM8GYDwJRLipkCG/x0+iQ3+/fbDcKMFpCpontDeWhTiEZhkxnpehRtBDcLfeG73oRksfHsEEP+PNq16Xtc2sSWCrew4TXZAD540Sff22lXFE828lv7XQaJPriiF876or81hcmQzsYO0/aRudnFBDC9sVMEo/OTt2fTKsgc1Beughlg6UHRr6xiutkavvEtfP6BDIUq/N0HPRuVclHBWkEz5o8Gfq0B2J65w0MJhfnFcAMeZLxRLcJbkGa/AFmmrHY0XIIiaDE7lDtw1gfzLCCfM0rGj0+gNqlK0maGUo2WpZp47frY86WqJzIB1uUsqipzpq35475hTCzn7c+2w70iOXLp5Zz86QEqzNonrgKnfOThEk+UVmYj1WbPiYVXMrBy7ACInF3RFyCJxZlWv/3WmWdsnEUSRsGkoXcw5palu6DpSO9zK6FAgJLLYZsPySx3HQlewgZRQDyftWIV5vUm1a60uKkOdohiR9zkDkmqg4AyUcswAA=" alt ="Marketing Experience" class="marketing-img"></div>
+                    <div><img src="https://cdn.corenexis.com/files/c/9291342720.png" alt="Marketing Experience" class="marketing-img"></div>
                     <p>Supported pre launch updates to the TIFF 2026 Accenture Gala Screening and Reception website tracker, contributing to a high visibility client event generating 200+ account leads.</p>
                 </div>
 
                 <div class="experience-item">
-                    <div><img src="data:image/webp;base64,UklGRoIFAABXRUJQVlA4IHYFAADQJgCdASquAMYAPp1KoUslpKOhprgJ+LATiWlu3/slIBMbhS36v/X/8B4cdY2vRtT/3jvVllRLuRT9uMLx6TvJfuH/v3/5G7V5E/sMRWlAJym+aFtEppkXdWVqQ/xZnm1/kMF/cKh6sbxTY9yOmeM4KNqjsmCpaoNzSmcvUEHr6rIkFURiWbuRsuSaw/S0Faey1kIPyzAt8EJ10PuDhcL8kEXvVX/KrCekpDWwM5s80OoSti8oXkEJ8KIDp3doZGxq1xSIU68Y4Ea21NxBVgNPsooJthd4DqHeqxuXGfz7XW1rp5ywIJKMrBHSsxUhXVq8yBTwjgDCXHzyz948A7prD9LQVpnTfbfWvtHgHdNYRrhdGylO9zUjhd0ZhDjn4dxLlFV59JeNUSHlHOXcnnw/akSNlKd7mpCYWpEjZUbAAP4YSynj8LOYPJaKv80A6a9AbqP8ziSJ3jxPSZLMtpZAQtSEdmkmE+55jKmj13c90lQIMpG2PO9yAfa1tXMTESF86cz6813ROORc23CmMfKCPC6U+YziZjogxPyat9cnGbt75b4CxSNP8U/9IXJE5Mtl71kRnDVBpBin1ri5rtDFyEH/tBLqn2cOza3JNdxFN83m/PZDmmXck3i+dZTIim8DlknIPK2T1O/Por9z2Cmlw/Ntj+Vexm/9P276pqN6QSG5JBTjLJk4ixG4/Y8CS53nPo/2xVpsuoq/plq207I6Y+dvyF+zXfrEce/JJvl+oXSnmQfiWEurQri0016B4jd3n3XSxbcHOcsZ1vjvHmCzCNEdDBt1msJWLx/aPieyy0g9TusmlsK1p4ShT9ASpmDOMaTfpOmAtSix2CZE0GLGEoDp9hT6ne7eAaZwhwVQBf7aIECCM47YkntlSASajekzbsM8NsmmmvQPgRhMeQd+trNUsMAQ0heDROSeUBA1aph60YfGScaopOVB7iiSGqEQYOKZ788kk1jgz2+4Ds/GudsdfGLTFIy993oBXAt8EK90Jphlfvh1Wso+MgfXtEIM0HTurm2oXXsVU+CIAXzESnGyRtjUfFcQlNEf1IrOL+o7FoH17G8BwrwQi6NF4L7kfESLp3k80kzqjwZZYtcv3Ioh3oFbzfIZXZ6ha5NoBk7FJgKTt/X99tP5nKjaMf+J1nFroDcOUdvz+hGQe6KG4OCozkbobV+pUkXX2sxoauuWfYLsir6hDIHzcecSYhYOl38c1diwx8fbXz98llUzkBdCSasCZ4uPpzarO7yzPLenL4ZS3Fv3Lt6+LtuOUJcEWd+Bc8QMJQuNOIDBWer84W+gOR/QLhl2tXBlYgu5IRllxuTXdhpNYdKBVcWuZ2/x1SXIX73cLKXdH9tn4sTSM8GYDwJRLipkCG/x0+iQ3+/fbDcKMFpCpontDeWhTiEZhkxnpehRtBDcLfeG73oRksfHsEEP+PNq16Xtc2sSWCrew4TXZAD540Sff22lXFE828lv7XQaJPriiF876or81hcmQzsYO0/aRudnFBDC9sVMEo/OTt2fTKsgc1Beughlg6UHRr6xiutkavvEtfP6BDIUq/N0HPRuVclHBWkEz5o8Gfq0B2J65w0MJhfnFcAMeZLxRLcJbkGa/AFmmrHY0XIIiaDE7lDtw1gfzLCCfM0rGj0+gNqlK0maGUo2WpZp47frY86WqJzIB1uUsqipzpq35475hTCzn7c+2w70iOXLp5Zz86QEqzNonrgKnfOThEk+UVmYj1WbPiYVXMrBy7ACInF3RFyCJxZlWv/3WmWdsnEUSRsGkoXcw5palu6DpSO9zK6FAgJLLYZsPySx3HQlewgZRQDyftWIV5vUm1a60uKkOdohiR9zkDkmqg4AyUcswAA=" alt="Marketing Experience" class="marketing-img"></div>
+                    <div><img src="https://cdn.corenexis.com/files/c/9291342720.png" alt="Marketing Experience" class="marketing-img"></div>
                     <p>Maintained and optimized Excel trackers for Canada AI Leaders CALs to support accurate internal coordination, engagement, and communications.</p>
                 </div>
 
@@ -160,7 +160,7 @@ function openFolder(folderName, clickedFolder) {
                 </div>
 
                 <div class="experience-item">
-                    <div><img src="data:image/webp;base64,UklGRoIFAABXRUJQVlA4IHYFAADQJgCdASquAMYAPp1KoUslpKOhprgJ+LATiWlu3/slIBMbhS36v/X/8B4cdY2vRtT/3jvVllRLuRT9uMLx6TvJfuH/v3/5G7V5E/sMRWlAJym+aFtEppkXdWVqQ/xZnm1/kMF/cKh6sbxTY9yOmeM4KNqjsmCpaoNzSmcvUEHr6rIkFURiWbuRsuSaw/S0Faey1kIPyzAt8EJ10PuDhcL8kEXvVX/KrCekpDWwM5s80OoSti8oXkEJ8KIDp3doZGxq1xSIU68Y4Ea21NxBVgNPsooJthd4DqHeqxuXGfz7XW1rp5ywIJKMrBHSsxUhXVq8yBTwjgDCXHzyz948A7prD9LQVpnTfbfWvtHgHdNYRrhdGylO9zUjhd0ZhDjn4dxLlFV59JeNUSHlHOXcnnw/akSNlKd7mpCYWpEjZUbAAP4YSynj8LOYPJaKv80A6a9AbqP8ziSJ3jxPSZLMtpZAQtSEdmkmE+55jKmj13c90lQIMpG2PO9yAfa1tXMTESF86cz6813ROORc23CmMfKCPC6U+YziZjogxPyat9cnGbt75b4CxSNP8U/9IXJE5Mtl71kRnDVBpBin1ri5rtDFyEH/tBLqn2cOza3JNdxFN83m/PZDmmXck3i+dZTIim8DlknIPK2T1O/Por9z2Cmlw/Ntj+Vexm/9P276pqN6QSG5JBTjLJk4ixG4/Y8CS53nPo/2xVpsuoq/plq207I6Y+dvyF+zXfrEce/JJvl+oXSnmQfiWEurQri0016B4jd3n3XSxbcHOcsZ1vjvHmCzCNEdDBt1msJWLx/aPieyy0g9TusmlsK1p4ShT9ASpmDOMaTfpOmAtSix2CZE0GLGEoDp9hT6ne7eAaZwhwVQBf7aIECCM47YkntlSASajekzbsM8NsmmmvQPgRhMeQd+trNUsMAQ0heDROSeUBA1aph60YfGScaopOVB7iiSGqEQYOKZ788kk1jgz2+4Ds/GudsdfGLTFIy993oBXAt8EK90Jphlfvh1Wso+MgfXtEIM0HTurm2oXXsVU+CIAXzESnGyRtjUfFcQlNEf1IrOL+o7FoH17G8BwrwQi6NF4L7kfESLp3k80kzqjwZZYtcv3Ioh3oFbzfIZXZ6ha5NoBk7FJgKTt/X99tP5nKjaMf+J1nFroDcOUdvz+hGQe6KG4OCozkbobV+pUkXX2sxoauuWfYLsir6hDIHzcecSYhYOl38c1diwx8fbXz98llUzkBdCSasCZ4uPpzarO7yzPLenL4ZS3Fv3Lt6+LtuOUJcEWd+Bc8QMJQuNOIDBWer84W+gOR/QLhl2tXBlYgu5IRllxuTXdhpNYdKBVcWuZ2/x1SXIX73cLKXdH9tn4sTSM8GYDwJRLipkCG/x0+iQ3+/fbDcKMFpCpontDeWhTiEZhkxnpehRtBDcLfeG73oRksfHsEEP+PNq16Xtc2sSWCrew4TXZAD540Sff22lXFE828lv7XQaJPriiF876or81hcmQzsYO0/aRudnFBDC9sVMEo/OTt2fTKsgc1Beughlg6UHRr6xiutkavvEtfP6BDIUq/N0HPRuVclHBWkEz5o8Gfq0B2J65w0MJhfnFcAMeZLxRLcJbkGa/AFmmrHY0XIIiaDE7lDtw1gfzLCCfM0rGj0+gNqlK0maGUo2WpZp47frY86WqJzIB1uUsqipzpq35475hTCzn7c+2w70iOXLp5Zz86QEqzNonrgKnfOThEk+UVmYj1WbPiYVXMrBy7ACInF3RFyCJxZlWv/3WmWdsnEUSRsGkoXcw5palu6DpSO9zK6FAgJLLYZsPySx3HQlewgZRQDyftWIV5vUm1a60uKkOdohiR9zkDkmqg4AyUcswAA=" alt="Marketing Experience" class="marketing-img"></div>
+                    <div><img src="https://cdn.corenexis.com/files/c/9291342720.png" alt="Marketing Experience" class="marketing-img"></div>
                     <p>Drafted and coordinated internal communications to CALs, tailoring messaging to drive engagement and timely information sharing.</p>
                 </div>
             </div>
@@ -189,7 +189,7 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-                    <img src ="https://cdn.corenexis.com/files/c/9166176720.png" alt="Certificate Image" class="folder-img">
+                    <img src="https://cdn.corenexis.com/files/c/9166176720.png" alt="Certificate Image" class="folder-img">
                     <p>Marketing Fundamentals – Udacity, 2026</p>
                 </div>
 
@@ -203,13 +203,13 @@ function openFolder(folderName, clickedFolder) {
                     <p>SQL Nanodegree — Udacity, 2026</p>
                 </div>
 
-                   <div class="experience-item">
-                   <img src="https://cdn.corenexis.com/files/c/7757463720.png" alt="Certificate Image" class="folder-img">
-                   <p>AWS Partner: Accreditation Technical — Amazon Web Services, 2025</p>
+                <div class="experience-item">
+                    <img src="https://cdn.corenexis.com/files/c/7757463720.png" alt="Certificate Image" class="folder-img">
+                    <p>AWS Partner: Accreditation Technical — Amazon Web Services, 2025</p>
                 </div>
 
                 <div class="experience-item">
-                    <img src = "https://cdn.corenexis.com/files/c/8376888720.png" alt="Certificate Image" class="folder-img">
+                    <img src="https://cdn.corenexis.com/files/c/8376888720.png" alt="Certificate Image" class="folder-img">
                     <p>AWS Generative AI Certification — Amazon Web Services, 2025</p>
                 </div>
 
@@ -219,12 +219,12 @@ function openFolder(folderName, clickedFolder) {
                 </div>
 
                 <div class="experience-item">
-                   <img src="https://cdn.corenexis.com/files/c/3238669720.png" alt="Certificate Image" class="folder-img">
+                    <img src="https://cdn.corenexis.com/files/c/3238669720.png" alt="Certificate Image" class="folder-img">
                     <p>Reinvention with Agentic AI — Stanford HAI / Accenture, 2025</p>
                 </div>
 
                 <div class="experience-item">
-                     <img src="https://cdn.corenexis.com/files/c/1721253720.png " alt="Certificate Image" class="folder-img">
+                    <img src="https://cdn.corenexis.com/files/c/1721253720.png" alt="Certificate Image" class="folder-img">
                     <p>HTML5 Application Development Specialist — Certiport, 2024</p>
                 </div>
             </div>
@@ -242,35 +242,97 @@ function openFolder(folderName, clickedFolder) {
     }
 }
 
-/* GALLERY FILTER */
+/* PINTEREST GALLERY POPUPS */
 
-function setUpGalleryFilters() {
-    const columns = document.querySelectorAll(".column");
-    const buttons = document.querySelectorAll(".filter-buttons .btn");
+const galleryData = {
+    friends: {
+        title: "Friends",
+        images: [
+            "https://picsum.photos/400/560?random=11",
+            "https://picsum.photos/400/420?random=12",
+            "https://picsum.photos/400/620?random=13",
+            "https://picsum.photos/400/480?random=14",
+            "https://picsum.photos/400/520?random=15"
+        ]
+    },
 
-    if (!columns.length || !buttons.length) return;
+    events: {
+        title: "Events / Work",
+        images: [
+            "https://picsum.photos/400/500?random=21",
+            "https://picsum.photos/400/390?random=22",
+            "https://picsum.photos/400/610?random=23",
+            "https://picsum.photos/400/450?random=24",
+            "https://picsum.photos/400/570?random=25"
+        ]
+    },
 
-    filterSelection("all");
+    life: {
+        title: "Life Outside Work",
+        images: [
+            "https://picsum.photos/400/620?random=31",
+            "https://picsum.photos/400/430?random=32",
+            "https://picsum.photos/400/520?random=33",
+            "https://picsum.photos/400/380?random=34",
+            "https://picsum.photos/400/590?random=35"
+        ]
+    },
 
-    buttons.forEach(function (button) {
-        button.addEventListener("click", function () {
-            buttons.forEach(function (btn) {
-                btn.classList.remove("active");
+
+    projects: {
+        title: "Projects",
+        images: [
+            "https://picsum.photos/400/540?random=51",
+            "https://picsum.photos/400/420?random=52",
+            "https://picsum.photos/400/610?random=53",
+            "https://picsum.photos/400/470?random=54",
+            "https://picsum.photos/400/560?random=55"
+        ]
+    }
+
+
+};
+
+function setUpGalleryPopups() {
+    const pins = document.querySelectorAll(".pin");
+    const popup = document.getElementById("galleryPopup");
+    const popupTitle = document.getElementById("popupTitle");
+    const popupImages = document.getElementById("popupImages");
+    const closePopup = document.getElementById("closePopup");
+
+    if (!pins.length || !popup || !popupTitle || !popupImages || !closePopup) return;
+
+    pins.forEach(function (pin) {
+        pin.addEventListener("click", function () {
+            const folderName = pin.getAttribute("data-folder");
+            const folder = galleryData[folderName];
+
+            if (!folder) return;
+
+            popupTitle.textContent = folder.title;
+            popupImages.innerHTML = "";
+
+            folder.images.forEach(function (image) {
+                popupImages.innerHTML += `<img src="${image}" alt="${folder.title} image">`;
             });
 
-            button.classList.add("active");
+            popup.classList.add("active");
         });
     });
-}
 
-function filterSelection(category) {
-    const columns = document.querySelectorAll(".column");
+    closePopup.addEventListener("click", function () {
+        popup.classList.remove("active");
+    });
 
-    columns.forEach(function (column) {
-        column.classList.remove("show");
+    popup.addEventListener("click", function (event) {
+        if (event.target === popup) {
+            popup.classList.remove("active");
+        }
+    });
 
-        if (category === "all" || column.classList.contains(category)) {
-            column.classList.add("show");
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            popup.classList.remove("active");
         }
     });
 }
@@ -320,7 +382,6 @@ window.addEventListener("load", function () {
     if (!introScreen) return;
 
     document.addEventListener("click", function () {
-
         introScreen.classList.add("start");
 
         setTimeout(function () {
@@ -328,6 +389,4 @@ window.addEventListener("load", function () {
         }, 3000);
 
     }, { once: true });
-
 });
-
