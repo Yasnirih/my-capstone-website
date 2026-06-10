@@ -17,26 +17,90 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 function startTypingText() {
-    const typingText = document.getElementById("typingText");
 
-    if (!typingText) return;
+    const typingText1 = document.getElementById("typingText");
+    const typingText2 = document.getElementById("typingText2");
+    const aboutTypingText = document.getElementById("aboutTypingText");
+    const typingText4 = document.getElementById("typingText4");
 
-    const text = typingText.getAttribute("data-text");
-    let index = 0;
+    if (!typingText1 && !typingText4) return;
 
-    typingText.textContent = "";
+    /* HOME PAGE TEXTS */
 
-    function typeWriter() {
-        if (index < text.length) {
-            typingText.textContent += text.charAt(index);
-            index++;
-            setTimeout(typeWriter, 75);
+    if (typingText1 && typingText2) {
+
+        const text1 = typingText1.getAttribute("data-text");
+        const text2 = typingText2.getAttribute("data-text");
+
+        let index1 = 0;
+        let index2 = 0;
+
+        typingText1.textContent = "";
+        typingText2.textContent = "";
+
+        function typeFirst() {
+            if (index1 < text1.length) {
+                typingText1.textContent += text1.charAt(index1);
+                index1++;
+                setTimeout(typeFirst, 75);
+            } else {
+                setTimeout(typeSecond, 300);
+            }
         }
+typeFirst();
+        function typeSecond() {
+            if (index2 < text2.length) {
+                typingText2.textContent += text2.charAt(index2);
+                index2++;
+                setTimeout(typeSecond, 45);
+            }
+        }
+
+        
     }
 
-    typeWriter();
-}
+    /* ABOUT PAGE TEXT */
 
+    if (aboutTypingText) {
+
+        const aboutText = aboutTypingText.getAttribute("data-text");
+
+        let index3 = 0;
+
+        aboutTypingText.textContent = "";
+
+        function typeThird() {
+            if (index3 < aboutText.length) {
+                aboutTypingText.textContent += aboutText.charAt(index3);
+                index3++;
+                setTimeout(typeThird, 75);
+            }
+        }
+
+        typeThird();
+    }
+
+    /* JOURNEY PAGE TEXT */
+
+    if (typingText4) {
+
+        const journeyText = typingText4.getAttribute("data-text");
+
+        let index4 = 0;
+
+        typingText4.textContent = "";
+
+        function typeFourth() {
+            if (index4 < journeyText.length) {
+                typingText4.textContent += journeyText.charAt(index4);
+                index4++;
+                setTimeout(typeFourth, 75);
+            }
+        }
+
+        typeFourth();
+    }
+}
 function setUpSearchBar() {
     const searchInput = document.getElementById("searchInput");
 
