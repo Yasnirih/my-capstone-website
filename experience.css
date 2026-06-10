@@ -84,12 +84,14 @@ body {
     transition: 0.25s;
 }
 
+
 .nav-arrow {
     background: transparent;
-    font-size: 28px;
+    font-size: 40px;
     padding: 4px 10px;
     color: #12233d;
 }
+
 
 .nav-arrow:hover {
     background: rgba(255, 255, 255, 0.35);
@@ -97,15 +99,15 @@ body {
 }
 
 .url-bar {
-    width: 42%;
-    min-width: 320px;
-    max-width: 620px;
-    height: 38px;
+      width: 60%;
+    min-width: 420px;
+    max-width: 900px;
+    height: 48px;
     background: rgba(255, 255, 255, 0.72);
     border-radius: 11px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 18px;
     padding: 0 14px;
 }
 
@@ -115,16 +117,17 @@ body {
     outline: none;
     background: transparent;
     color: #12233d;
-    font-size: 14px;
+    font-size: 30px;
 }
 
 .go-btn {
-    height: 38px;
+    height: 55px;
     padding: 0 18px;
     border-radius: 11px;
     background: #12233d;
     color: white;
     font-weight: bold;
+    font-size:20px;
 }
 
 .go-btn:hover {

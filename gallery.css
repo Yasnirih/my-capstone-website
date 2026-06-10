@@ -3,17 +3,13 @@
 }
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: conic-gradient(
-        from 85deg at 26% 65.7%,
-        #a789de 0%,
-        #a86dd7 53.94%,
-        #8d7bff 100%
-    );
-    background-attachment: fixed;
     min-height: 100vh;
-    animation: pageFadeIn .8s ease forwards;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.35), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.45), transparent 32%),
+        linear-gradient(135deg, #b88cff, #8d7bff, #b46adf);
+    color: #12233d;
 }
 
 /* MAIN BROWSER */
@@ -160,15 +156,15 @@ body {
 }
 
 .url-bar {
-    width: 48%;
-    min-width: 320px;
-    max-width: 720px;
-    height: 40px;
-    background: rgba(255,255,255,.72);
-    border-radius: 12px;
+      width: 60%;
+    min-width: 420px;
+    max-width: 900px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 11px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 18px;
     padding: 0 14px;
 }
 
@@ -178,13 +174,12 @@ body {
     outline: none;
     background: transparent;
     color: #12233d;
-    font-size: 14px;
+    font-size: 30px;
 }
-
 .go-btn {
     border: none;
     cursor: pointer;
-    height: 40px;
+    height: 55px;
     padding: 0 18px;
     border-radius: 12px;
     background: #12233d;
