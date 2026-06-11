@@ -19,7 +19,29 @@ body {
         radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.45), transparent 32%),
         linear-gradient(135deg, #b88cff, #8d7bff, #b46adf);
     color: #12233d;
+
+    animation: pageEnter 0.8s ease forwards;
 }
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.45s ease;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        filter: blur(12px);
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
 
 /* MAIN BROWSER */
 
@@ -504,4 +526,32 @@ img {
     .fact-card p {
         font-size: 1rem;
     }
+}
+
+.dock-footer {
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    padding: 14px 20px;
+
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.22);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 10px 30px rgba(54, 35, 110, 0.2);
+
+    color: #12233d;
+
+    font-family: "Life Savers", serif;
+
+    font-size: 0.95rem;
+
+    z-index: 9999;
 }

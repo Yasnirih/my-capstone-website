@@ -5,10 +5,36 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
-    background: conic-gradient(from 85deg at 26% 65.7%, #a789de 0%, #a86dd7 53.94%, #8d7bff 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.35), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.45), transparent 32%),
+        linear-gradient(135deg, #b88cff, #8d7bff, #b46adf);
+    color: #12233d;
+
+    animation: pageEnter 0.8s ease forwards;
 }
+
+body.fade-out {
+    opacity: 0;
+    transition: opacity 0.45s ease;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        filter: blur(12px);
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        filter: blur(0);
+        transform: scale(1);
+    }
+}
+
 
 .browser {
     min-height: 100vh;
@@ -498,4 +524,32 @@ input {
     box-shadow:
         0 20px 38px rgba(70, 45, 120, 0.3),
         0 0 32px rgba(141, 123, 255, 0.5);
+}
+
+.dock-footer {
+    position: fixed;
+
+    bottom: 20px;
+    right: 20px;
+
+    padding: 14px 20px;
+
+    border-radius: 22px;
+
+    background: rgba(255, 255, 255, 0.22);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0 10px 30px rgba(54, 35, 110, 0.2);
+
+    color: #12233d;
+
+    font-family: "Life Savers", serif;
+
+    font-size: 0.95rem;
+
+    z-index: 9999;
 }

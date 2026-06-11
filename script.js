@@ -14,93 +14,68 @@ window.addEventListener("DOMContentLoaded", function () {
     setUpMobileMenu();
     setUpQuoteModal();
     setUpGalleryPopups();
+    setUpGalleryReveal();
+    setUpPageTransitions();
 });
 
 function startTypingText() {
-
     const typingText1 = document.getElementById("typingText");
     const typingText2 = document.getElementById("typingText2");
     const aboutTypingText = document.getElementById("aboutTypingText");
     const typingText4 = document.getElementById("typingText4");
+    const typingText5 = document.getElementById("typingText5");
+    const typingText6 = document.getElementById("typingText6");
 
-    if (!typingText1 && !typingText4) return;
+    if (!typingText1 && !typingText2 && !aboutTypingText && !typingText4 && !typingText5 && !typingText6) return;
 
-    /* HOME PAGE TEXTS */
+    function typeText(element, speed, callback) {
+        if (!element) return;
+
+        const text = element.getAttribute("data-text");
+
+        if (!text) return;
+
+        let index = 0;
+        element.textContent = "";
+
+        function type() {
+            if (index < text.length) {
+                element.textContent += text.charAt(index);
+                index++;
+                setTimeout(type, speed);
+            } else if (callback) {
+                callback();
+            }
+        }
+
+        type();
+    }
 
     if (typingText1 && typingText2) {
-
-        const text1 = typingText1.getAttribute("data-text");
-        const text2 = typingText2.getAttribute("data-text");
-
-        let index1 = 0;
-        let index2 = 0;
-
-        typingText1.textContent = "";
-        typingText2.textContent = "";
-
-        function typeFirst() {
-            if (index1 < text1.length) {
-                typingText1.textContent += text1.charAt(index1);
-                index1++;
-                setTimeout(typeFirst, 75);
-            } else {
-                setTimeout(typeSecond, 300);
-            }
-        }
-typeFirst();
-        function typeSecond() {
-            if (index2 < text2.length) {
-                typingText2.textContent += text2.charAt(index2);
-                index2++;
-                setTimeout(typeSecond, 45);
-            }
-        }
-
-        
+        typeText(typingText1, 75, function () {
+            setTimeout(function () {
+                typeText(typingText2, 45);
+            }, 300);
+        });
     }
-
-    /* ABOUT PAGE TEXT */
 
     if (aboutTypingText) {
-
-        const aboutText = aboutTypingText.getAttribute("data-text");
-
-        let index3 = 0;
-
-        aboutTypingText.textContent = "";
-
-        function typeThird() {
-            if (index3 < aboutText.length) {
-                aboutTypingText.textContent += aboutText.charAt(index3);
-                index3++;
-                setTimeout(typeThird, 75);
-            }
-        }
-
-        typeThird();
+        typeText(aboutTypingText, 75);
     }
-
-    /* JOURNEY PAGE TEXT */
 
     if (typingText4) {
+        typeText(typingText4, 75);
+    }
 
-        const journeyText = typingText4.getAttribute("data-text");
-
-        let index4 = 0;
-
-        typingText4.textContent = "";
-
-        function typeFourth() {
-            if (index4 < journeyText.length) {
-                typingText4.textContent += journeyText.charAt(index4);
-                index4++;
-                setTimeout(typeFourth, 75);
-            }
-        }
-
-        typeFourth();
+    if (typingText5 && typingText6) {
+        typeText(typingText5, 75, function () {
+            setTimeout(function () {
+                typeText(typingText6, 45);
+            }, 300);
+        });
     }
 }
+
 function setUpSearchBar() {
     const searchInput = document.getElementById("searchInput");
 
@@ -122,17 +97,17 @@ function searchSite() {
     const searchValue = searchInput.value.toLowerCase().trim();
 
     if (searchValue.includes("about")) {
-        window.location.href = "home.html";
+        goToPage("home.html");
     } else if (searchValue.includes("home")) {
-        window.location.href = "index.html";
+        goToPage("index.html");
     } else if (searchValue.includes("journey")) {
-        window.location.href = "journey.html";
+        goToPage("journey.html");
     } else if (searchValue.includes("experience")) {
-        window.location.href = "experience.html";
+        goToPage("experience.html");
     } else if (searchValue.includes("gallery")) {
-        window.location.href = "gallery.html";
+        goToPage("gallery.html");
     } else if (searchValue.includes("contact") || searchValue.includes("resume")) {
-        window.location.href = "contact.html";
+        goToPage("contact.html");
     } else if (message) {
         message.textContent = "Try searching: about, journey, experience, gallery, contact, or resume.";
     }
@@ -140,8 +115,16 @@ function searchSite() {
 
 function openPage(pageName) {
     if (pages[pageName]) {
-        window.location.href = pages[pageName];
+        goToPage(pages[pageName]);
     }
+}
+
+function goToPage(url) {
+    document.body.classList.add("fade-out");
+
+    setTimeout(function () {
+        window.location.href = url;
+    }, 450);
 }
 
 function setUpMobileMenu() {
@@ -312,21 +295,21 @@ const galleryData = {
     friends: {
         title: "Friends",
         images: [
-            "https://picsum.photos/400/560?random=11",
-            "https://picsum.photos/400/420?random=12",
-            "https://picsum.photos/400/620?random=13",
-            "https://picsum.photos/400/480?random=14",
-            "https://picsum.photos/400/520?random=15"
+            "https://cdn.corenexis.com/f/6ZZf3pOrES5.png",
+            "https://cdn.corenexis.com/f/v16H16jhO6a.png",
+            "https://cdn.corenexis.com/f/CJDfHilO8PV.png",
+            "https://cdn.corenexis.com/f/v7QEstVqPmg.png",
+            "https://cdn.corenexis.com/f/MdxcpT4zhI9.png"
         ]
     },
 
     events: {
         title: "Events / Work",
         images: [
-            "https://picsum.photos/400/500?random=21",
-            "https://picsum.photos/400/390?random=22",
-            "https://picsum.photos/400/610?random=23",
-            "https://picsum.photos/400/450?random=24",
+            "https://cdn.corenexis.com/f/jzfTmZw2bms.png",
+            "https://cdn.corenexis.com/f/hjeQZ7G2Xw5.png",
+            "https://cdn.corenexis.com/f/KMRtPLlxE4x.png",
+            "https://cdn.corenexis.com/f/MCEoYbCrLYp.png",
             "https://picsum.photos/400/570?random=25"
         ]
     },
@@ -334,28 +317,39 @@ const galleryData = {
     life: {
         title: "Life Outside Work",
         images: [
-            "https://picsum.photos/400/620?random=31",
-            "https://picsum.photos/400/430?random=32",
-            "https://picsum.photos/400/520?random=33",
-            "https://picsum.photos/400/380?random=34",
-            "https://picsum.photos/400/590?random=35"
+            "https://cdn.corenexis.com/f/2mIMg9IRRSp.png",
+            "https://cdn.corenexis.com/f/m3aQN26jWoQ.png",
+            "https://cdn.corenexis.com/f/M6mpspGuvxv.png",
+            "https://cdn.corenexis.com/f/qRPLqNpg6xX.png",
+            "https://cdn.corenexis.com/f/qjgdYu725p1.png" 
         ]
     },
 
-
     projects: {
-        title: "Projects",
+        title: "Memorable Moments",
         images: [
-            "https://picsum.photos/400/540?random=51",
-            "https://picsum.photos/400/420?random=52",
-            "https://picsum.photos/400/610?random=53",
-            "https://picsum.photos/400/470?random=54",
+            "https://cdn.corenexis.com/f/vBYNTB834aK.png",
+            "https://cdn.corenexis.com/f/EeWhwqHA7Gs.png",
+            "https://cdn.corenexis.com/f/0i9wTeiTunE.png",
+            "https://cdn.corenexis.com/f/69u2fuDT3j6.png",
             "https://picsum.photos/400/560?random=55"
         ]
     }
-
-
 };
+
+function setUpGalleryReveal() {
+    const pins = document.querySelectorAll(".pin");
+
+    if (!pins.length) return;
+
+    document.addEventListener("click", function () {
+        pins.forEach(function (pin, index) {
+            setTimeout(function () {
+                pin.classList.add("show");
+            }, index * 160);
+        });
+    }, { once: true });
+}
 
 function setUpGalleryPopups() {
     const pins = document.querySelectorAll(".pin");
@@ -454,3 +448,18 @@ window.addEventListener("load", function () {
 
     }, { once: true });
 });
+
+/* PAGE TRANSITIONS */
+
+function setUpPageTransitions() {
+    document.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            const href = link.getAttribute("href");
+
+            if (!href || href.startsWith("#")) return;
+
+            e.preventDefault();
+            goToPage(href);
+        });
+    });
+}
