@@ -10,6 +10,7 @@ body {
     min-height: 100%;
     overflow-x: hidden;
 }
+
 body {
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -18,7 +19,6 @@ body {
         radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.45), transparent 32%),
         linear-gradient(135deg, #b88cff, #8d7bff, #b46adf);
     color: #12233d;
-
     animation: pageEnter 0.8s ease forwards;
 }
 
@@ -40,7 +40,6 @@ body.fade-out {
         transform: scale(1);
     }
 }
-
 
 /* APPLE HELLO INTRO SCREEN */
 
@@ -75,7 +74,8 @@ body.fade-out {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
     font-style: normal;
-font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
+    font-size: clamp(5rem, 10vw, 9rem);
+    letter-spacing: 4px;
     color: rgb(0, 0, 0);
     text-align: center;
 
@@ -88,7 +88,6 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
         0 0 40px rgba(141, 9, 212, 0.4);
 }
 
-/* Only starts after screen is clicked */
 #intro-screen.start .hello-text {
     animation:
         fadeIn 2s ease forwards,
@@ -97,9 +96,7 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 }
 
 #intro-screen.hide {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    display: none;
 }
 
 @keyframes fadeIn {
@@ -156,7 +153,10 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
     min-height: 100vh;
 }
 
+/* TOP BAR */
+
 .top-bar {
+    width: 100%;
     height: 105px;
     background: rgba(214, 207, 255, 0.72);
     backdrop-filter: blur(18px);
@@ -173,7 +173,8 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
     gap: 7px;
 }
 
-.window-dots span {
+.window-dots span,
+.dot {
     width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -229,8 +230,8 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 
 .nav-arrow {
     background: transparent;
-    font-size: 28px;
-    padding: 4px 10px;
+    font-size: 20px;
+    padding: 3px 8px;
     color: #12233d;
 }
 
@@ -240,35 +241,55 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 }
 
 .url-bar {
-      width: 60%;
-    min-width: 420px;
-    max-width: 900px;
-    height: 48px;
-    background: rgba(255, 255, 255, 0.72);
-    border-radius: 11px;
+    width: 42%;
+    min-width: 430px;
+    max-width: 760px;
+
+    height: 39px;
+
+    background: rgba(255, 255, 255, 0.75);
+
+    border-radius: 12px;
+
     display: flex;
     align-items: center;
-    gap: 18px;
+
+    gap: 10px;
+
     padding: 0 14px;
+
+    box-shadow:
+        inset 0 1px 3px rgba(0,0,0,0.05),
+        0 4px 12px rgba(65, 45, 120, 0.08);
 }
 
 .url-bar input {
     width: 100%;
+
     border: none;
     outline: none;
+
     background: transparent;
+
     color: #12233d;
-    font-size: 30px;
+
+    font-size: 15px;
 }
 
 .go-btn {
-    height: 55px;
-    padding: 0 18px;
+    height: 39px;
+
+    padding: 0 16px;
+
     border-radius: 11px;
+
     background: #12233d;
+
     color: white;
+
     font-weight: bold;
-    font-size:20px;
+
+    font-size: 14px;
 }
 
 .go-btn:hover {
@@ -284,13 +305,11 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 .hero {
     max-width: 1500px;
     width: 100%;
-
     margin: 0 auto 75px;
-
 }
 
 #typingText {
-  font-family: "Petrona", serif;
+    font-family: "Petrona", serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -298,21 +317,19 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 .hero h2 {
     font-size: 65px;
     margin-bottom: 14px;
-  font-family: "Petrona", serif;
-     font-weight: 400;
+    font-family: "Petrona", serif;
+    font-weight: 400;
     font-style: normal;
     white-space: nowrap;
-
 }
 
 .hero-subtitle {
     max-width: 610px;
     margin: 0 auto;
     line-height: 1.6;
-   transform: translateX(-80px);
-   padding-right: 1680px;
+    transform: translateX(-80px);
+    padding-right: 1680px;
 }
-
 
 #searchMessage {
     min-height: 24px;
@@ -328,7 +345,7 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
     justify-content: center;
     align-items: center;
 
-    gap: 35px;
+    gap: 48px;
 
     flex-wrap: wrap;
 
@@ -367,7 +384,6 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
     font-size: 85px;
 
     box-shadow: 0 12px 25px rgba(64,44,120,0.2);
-    
 }
 
 .favorite-card p {
@@ -416,7 +432,7 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    font-size:35px;
+    font-size: 35px;
 }
 
 .see-more-btn {
@@ -486,7 +502,7 @@ font-size: clamp(5rem, 10vw, 9rem);    letter-spacing: 4px;
 }
 
 h1 {
-     font-family: "Cormorant Garamond";
+    font-family: "Cormorant Garamond";
     font-size: 80px;
     white-space: nowrap;
     padding-left: 20px;
@@ -505,12 +521,14 @@ h1 {
 
 @media (max-width: 768px) {
     .top-bar {
-        height: 135px;
+        height: 112px;
+        align-items: flex-end;
+        padding-bottom: 12px;
     }
 
     .toolbar {
-        top: 68px;
         flex-wrap: wrap;
+        padding: 0 12px;
     }
 
     .url-bar {
@@ -536,6 +554,11 @@ h1 {
 @media (max-width: 600px) {
     .tab {
         display: none;
+    }
+
+    .window-dots {
+        top: 16px;
+        left: 16px;
     }
 
     .url-bar {
@@ -578,22 +601,20 @@ p {
     font-size: 20px;
 }
 
-a{
+a {
     font-family: "Petit Formal Script", cursive;
-  font-style: bold;  
-  font-size: 18px;
+    font-style: bold;
+    font-size: 18px;
 }
-
 
 input {
     font-family: "Englebert", cursive;
 }
 
-
 /* MINI WINDOW */
 
 .mini-window {
-    width: 92%;
+    width: 100%;
     max-width: 1450px;
 
     margin: 70px auto;
@@ -682,7 +703,7 @@ input {
 }
 
 .about-text h1 {
-  font-family: "Petrona", serif;
+    font-family: "Petrona", serif;
 
     font-size: clamp(4rem, 6vw, 6.2rem);
 
@@ -700,7 +721,7 @@ input {
 }
 
 .about-text p {
-  font-family: "Petrona", serif;
+    font-family: "Petrona", serif;
 
     font-size: 35px;
 
@@ -716,7 +737,6 @@ input {
 /* MOBILE */
 
 @media (max-width: 950px) {
-
     .about-layout {
         grid-template-columns: 1fr;
 
@@ -731,7 +751,6 @@ input {
         text-align: center;
     }
 }
-
 
 .dock-footer {
     position: fixed;

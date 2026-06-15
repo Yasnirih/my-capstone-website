@@ -434,16 +434,23 @@ function setUpQuoteModal() {
 
 /* INTRO SCREEN */
 
-window.addEventListener("load", function () {
+window.addEventListener("load", () => {
     const introScreen = document.getElementById("intro-screen");
 
     if (!introScreen) return;
 
-    document.addEventListener("click", function () {
+    // If intro already played, hide it right away
+    if (sessionStorage.getItem("introPlayed") === "true") {
+        introScreen.style.display = "none";
+        return;
+    }
+
+    document.addEventListener("click", () => {
         introScreen.classList.add("start");
 
-        setTimeout(function () {
+        setTimeout(() => {
             introScreen.classList.add("hide");
+            sessionStorage.setItem("introPlayed", "true");
         }, 3000);
 
     }, { once: true });

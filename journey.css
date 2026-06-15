@@ -176,13 +176,15 @@ padding-right: 15px;
 }
 
 .dropbtn {
+    background: #d8d2f2;
+    color: #4c3b63;
     border: none;
-    border-radius: 18px;
-    padding: 9px 16px;
-    background: rgba(255, 255, 255, 0.45);
-    color: #5c4185;
-    font-weight: bold;
+    padding: 9px 14px;
+    border-radius: 14px;
     cursor: pointer;
+    font-weight: bold;
+    width:150px;
+    font-size: 20px;
 }
 
 .dropdown-content {
