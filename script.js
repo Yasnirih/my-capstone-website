@@ -309,8 +309,7 @@ const galleryData = {
             "https://cdn.corenexis.com/f/jzfTmZw2bms.png",
             "https://cdn.corenexis.com/f/hjeQZ7G2Xw5.png",
             "https://cdn.corenexis.com/f/KMRtPLlxE4x.png",
-            "https://cdn.corenexis.com/f/MCEoYbCrLYp.png",
-            "https://picsum.photos/400/570?random=25"
+            "https://cdn.corenexis.com/f/MCEoYbCrLYp.png"
         ]
     },
 
@@ -331,8 +330,7 @@ const galleryData = {
             "https://cdn.corenexis.com/f/vBYNTB834aK.png",
             "https://cdn.corenexis.com/f/EeWhwqHA7Gs.png",
             "https://cdn.corenexis.com/f/0i9wTeiTunE.png",
-            "https://cdn.corenexis.com/f/69u2fuDT3j6.png",
-            "https://picsum.photos/400/560?random=55"
+            "https://cdn.corenexis.com/f/69u2fuDT3j6.png"
         ]
     }
 };
