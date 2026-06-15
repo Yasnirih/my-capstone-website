@@ -271,7 +271,7 @@ function openFolder(folderName, clickedFolder) {
                 </div>
 
                 <div class="experience-item">
-                    <img src="https://cdn.corenexis.com/files/c/1721253720.png" alt="Certificate Image" class="folder-img">
+                    <img src="" alt="Certificate Image" class="folder-img">
                     <p>HTML5 Application Development Specialist — Certiport, 2024</p>
                 </div>
             </div>
