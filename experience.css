@@ -529,11 +529,13 @@ input {
         0 0 32px rgba(141, 123, 255, 0.5);
 }
 
-.core-img {
-    width: 100%;
-    max-width: 700px;
 
-    height: 420px;
+
+.core-img {
+    width: 860px;
+    max-width: 1000px;
+
+    height: 620px;
 
     object-fit: cover;
     object-position: center;
