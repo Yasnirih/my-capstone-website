@@ -219,12 +219,12 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-                    <div class="image-placeholder">Add Image Here</div>
+                  <img src="https://cdn.corenexis.com/f/1IR8LdaUHPw.png" class="core-img">
                     <p>Selected as the only apprentice to serve as a Communications Coach, providing structured communication guidance and professional writing feedback to 3+ year 1 youth apprentices.</p>
                 </div>
 
                 <div class="experience-item">
-                    <div class="image-placeholder">Add Image Here</div>
+                    <img src="https://cdn.corenexis.com/f/0iZzyKuwPz7.png" class="core-img">
                     <p>Supported onboarding of 20+ apprentices, facilitated cohort building events, developed an Excel training session, and provided peer mentorship.</p>
                 </div>
             </div>
