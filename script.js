@@ -192,7 +192,7 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-                    <div><img src="https://cdn.corenexis.com/files/c/9291342720.png" alt="Marketing Experience" class="marketing-img"></div>
+                    <div> <img src="https://cdn.corenexis.com/f/zkHocIfLqZe.png" alt="Marketing Experience" class="marketing-img"></div>
                     <p>Supported pre launch updates to the TIFF 2026 Accenture Gala Screening and Reception website tracker, contributing to a high visibility client event generating 200+ account leads.</p>
                 </div>
 
@@ -207,7 +207,7 @@ function openFolder(folderName, clickedFolder) {
                 </div>
 
                 <div class="experience-item">
-                    <div><img src="https://cdn.corenexis.com/files/c/9291342720.png" alt="Marketing Experience" class="marketing-img"></div>
+                    <div><img src="https://cdn.corenexis.com/f/WNlEQE8qhOf.png" alt="Marketing Experience" class="marketing-img"></div>
                     <p>Drafted and coordinated internal communications to CALs, tailoring messaging to drive engagement and timely information sharing.</p>
                 </div>
             </div>
@@ -271,7 +271,7 @@ function openFolder(folderName, clickedFolder) {
                 </div>
 
                 <div class="experience-item">
-                    <img src="" alt="Certificate Image" class="folder-img">
+                    <img src="https://th.bing.com/th/id/OIP.xMdPECDm-YJ4yV6_8-r5vwHaE0?w=247&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Certificate Image" class="folder-img">
                     <p>HTML5 Application Development Specialist — Certiport, 2024</p>
                 </div>
             </div>
