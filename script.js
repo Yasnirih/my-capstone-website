@@ -192,7 +192,7 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-                    <div> <img src="https://cdn.corenexis.com/f/zkHocIfLqZe.png" alt="Marketing Experience" class="marketing-img"></div>
+                    <div> <img src="https://cdn.corenexis.com/f/Px3Cswjk2RE.png" alt="Marketing Experience" class="marketing-img"></div>
                     <p>Supported pre launch updates to the TIFF 2026 Accenture Gala Screening and Reception website tracker, contributing to a high visibility client event generating 200+ account leads.</p>
                 </div>
 
@@ -207,7 +207,7 @@ function openFolder(folderName, clickedFolder) {
                 </div>
 
                 <div class="experience-item">
-                    <div><img src="https://cdn.corenexis.com/f/WNlEQE8qhOf.png" alt="Marketing Experience" class="marketing-img"></div>
+                    <div><img src="https://cdn.corenexis.com/f/6HZlPxbjwDJ.png" alt="Marketing Experience" class="marketing-img"></div>
                     <p>Drafted and coordinated internal communications to CALs, tailoring messaging to drive engagement and timely information sharing.</p>
                 </div>
             </div>
@@ -219,12 +219,12 @@ function openFolder(folderName, clickedFolder) {
 
             <div class="experience-items">
                 <div class="experience-item">
-                  <img src="https://cdn.corenexis.com/f/1IR8LdaUHPw.png" class="core-img">
+                  <img src="https://cdn.corenexis.com/f/cJ3xhhceDQV.png" class="core-img">
                     <p>Selected as the only apprentice to serve as a Communications Coach, providing structured communication guidance and professional writing feedback to 3+ year 1 youth apprentices.</p>
                 </div>
 
                 <div class="experience-item">
-                    <img src="https://cdn.corenexis.com/f/0iZzyKuwPz7.png" class="core-img">
+                    <img src="https://cdn.corenexis.com/f/UkqiA4usMG6.png" class="core-img">
                     <p>Supported onboarding of 20+ apprentices, facilitated cohort building events, developed an Excel training session, and provided peer mentorship.</p>
                 </div>
             </div>
