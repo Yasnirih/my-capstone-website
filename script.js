@@ -468,3 +468,49 @@ function setUpPageTransitions() {
         });
     });
 }
+
+function filterTimeline(filter, button) {
+
+    const cards = document.querySelectorAll(".timeline-card");
+
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    cards.forEach(card => {
+
+        if (filter === "all") {
+            card.style.display = "";
+        }
+
+        else if (filter === "important") {
+            card.style.display =
+                card.classList.contains("important")
+                    ? ""
+                    : "none";
+        }
+
+        else {
+            card.style.display =
+                card.dataset.year === filter
+                    ? ""
+                    : "none";
+        }
+    });
+
+    const visibleCards = [...document.querySelectorAll(".timeline-card")]
+        .filter(card => card.style.display !== "none");
+
+    visibleCards.forEach((card, index) => {
+
+        card.classList.remove("left", "right");
+
+        if (index % 2 === 0) {
+            card.classList.add("left");
+        } else {
+            card.classList.add("right");
+        }
+    });
+}

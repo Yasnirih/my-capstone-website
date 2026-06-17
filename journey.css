@@ -567,3 +567,97 @@ font-size: 35px;
 
     z-index: 9999;
 }
+
+/* =========================
+   TIMELINE FILTERS
+========================= */
+
+.timeline-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+
+    margin-top: 35px;
+    margin-bottom: 20px;
+
+    padding: 10px 20px;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+
+    border-radius: 999px;
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    background: rgba(255,255,255,0.12);
+
+    backdrop-filter: blur(12px);
+
+    color: white;
+
+    font-family: "Cormorant Garamond";
+    font-size: 24px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow: 0 8px 20px rgba(54,35,110,.18);
+}
+
+.filter-btn:hover {
+    transform: translateY(-3px);
+
+    background: rgba(255,255,255,0.2);
+
+    box-shadow: 0 12px 30px rgba(54,35,110,.28);
+}
+
+.filter-btn.active {
+    background: rgba(255,255,255,0.28);
+
+    border: 1px solid rgba(255,255,255,0.75);
+
+    box-shadow:
+        0 0 15px rgba(255,255,255,.35),
+        0 0 35px rgba(178,140,255,.55);
+}
+
+/* =========================
+   IMPORTANT EVENTS
+========================= */
+
+.timeline-card.important .content {
+    border: 2px solid rgba(255,255,255,.75);
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,.12),
+        0 0 50px rgba(178,140,255,.35);
+}
+
+.timeline-card.important .date {
+    background: rgba(255,255,255,.18);
+}
+
+.timeline-card.important::after {
+    content: "";
+
+    position: absolute;
+
+    top: 20px;
+
+    font-size: 28px;
+
+    z-index: 10;
+}
+
+.timeline-card.left.important::after {
+    right: 10px;
+}
+
+.timeline-card.right.important::after {
+    left: 10px;
+}
