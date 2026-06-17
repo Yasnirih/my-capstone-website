@@ -197,7 +197,7 @@ function openFolder(folderName, clickedFolder) {
                 </div>
 
                 <div class="experience-item">
-                    <div><img src="https://cdn.corenexis.com/files/c/9291342720.png" alt="Marketing Experience" class="marketing-img"></div>
+                    <div><img src="https://cdn.corenexis.com/f/fBHc5H7TASo.png" alt="Marketing Experience" class="marketing-img"></div>
                     <p>Maintained and optimized Excel trackers for Canada AI Leaders CALs to support accurate internal coordination, engagement, and communications.</p>
                 </div>
 
