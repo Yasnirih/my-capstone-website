@@ -1,0 +1,299 @@
+/* responsive-fixes.css
+   Add this file after each page's main CSS file in your HTML.
+   Example: <link rel="stylesheet" href="responsive-fixes.css">
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+.browser,
+.desktop,
+.mini-window,
+.mini-content,
+.about-layout,
+.fact-grid,
+.pinterest-board,
+.popup-window,
+.popup-images,
+.file-explorer,
+.folder-content,
+.folder-area,
+.timeline,
+.timeline-container,
+.contact-form,
+.resume-frame {
+  max-width: 100%;
+}
+
+/* shared safari bar fixes */
+.url-bar {
+  width: min(60%, 900px);
+  min-width: 0 !important;
+}
+
+.url-bar input {
+  min-width: 0;
+}
+
+.dropbtn {
+  max-width: 100%;
+}
+
+/* index/styles.css fixes */
+.hero-subtitle {
+  padding-right: 0 !important;
+  transform: none !important;
+  max-width: 700px;
+}
+
+.hero h2,
+h1,
+#typingText {
+  white-space: normal !important;
+  overflow-wrap: break-word;
+}
+
+.icon {
+  width: clamp(120px, 18vw, 215px);
+  height: clamp(120px, 18vw, 215px);
+  font-size: clamp(48px, 8vw, 85px);
+}
+
+.favorite-card {
+  width: min(200px, 100%);
+}
+
+.quote-card {
+  width: min(560px, 86vw);
+  height: auto;
+  min-height: 210px;
+}
+
+.quote-card p {
+  font-size: clamp(1.2rem, 4vw, 2.2rem);
+}
+
+/* home.css fixes */
+.mini-window {
+  width: min(96%, 1450px) !important;
+  min-height: auto !important;
+}
+
+.about-layout {
+  grid-template-columns: minmax(260px, 430px) minmax(0, 1fr);
+}
+
+.photo-card {
+  width: min(430px, 100%) !important;
+}
+
+.fact-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+}
+
+.fact-card {
+  min-width: 0 !important;
+  width: 100%;
+}
+
+/* experience.css fixes */
+.file-explorer,
+.folder-content {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.folder-area {
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
+}
+
+.core-img,
+.marketing-img,
+.apprenticeship-img,
+.panel-img,
+.experience-img,
+.folder-img {
+  width: 100% !important;
+  max-width: 900px;
+  height: auto !important;
+  object-fit: cover;
+}
+
+/* gallery.css fixes */
+.pinterest-board {
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)) !important;
+}
+
+.pin img {
+  height: clamp(260px, 40vw, 650px) !important;
+  object-fit: cover;
+}
+
+.pin-text h3 {
+  white-space: normal !important;
+  font-size: clamp(2rem, 5vw, 3.4rem) !important;
+}
+
+.popup-window {
+  width: min(95vw, 1200px) !important;
+  max-height: 90vh !important;
+}
+
+.popup-images {
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)) !important;
+}
+
+.popup-images img {
+  height: clamp(240px, 42vw, 500px) !important;
+  object-fit: cover;
+}
+
+/* contact.css fixes */
+.typewriter-title {
+  max-width: 100%;
+}
+
+.contact-btn {
+  word-break: break-word;
+}
+
+/* footer fix */
+.dock-footer {
+  max-width: calc(100vw - 24px);
+  font-size: clamp(0.75rem, 2vw, 0.95rem) !important;
+}
+
+@media (max-width: 950px) {
+  .about-layout {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .mini-content {
+    padding: 38px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    height: 140px !important;
+  }
+
+  .tab {
+    display: none !important;
+  }
+
+  .toolbar {
+    top: 58px !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 12px !important;
+  }
+
+  .nav-arrow {
+    font-size: 24px !important;
+    padding: 4px 8px !important;
+  }
+
+  .url-bar {
+    width: 100% !important;
+    height: 38px !important;
+  }
+
+  .url-bar input {
+    font-size: 14px !important;
+  }
+
+  .go-btn {
+    width: 70px !important;
+    height: 36px !important;
+    font-size: 12px !important;
+    padding: 0 10px !important;
+  }
+
+  .dropdown {
+    top: 12px !important;
+    right: 14px !important;
+  }
+
+  .dropbtn {
+    width: 115px !important;
+    font-size: 13px !important;
+  }
+
+  .desktop,
+  .start-page,
+  .experience-page {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    align-items: flex-start !important;
+  }
+
+  .mini-content {
+    padding: 22px !important;
+  }
+
+  h1,
+  #typingText {
+    font-size: clamp(2.6rem, 15vw, 4.5rem) !important;
+  }
+
+  .hero h2 {
+    font-size: clamp(1.8rem, 9vw, 3rem) !important;
+  }
+
+  .hero-subtitle,
+  p {
+    font-size: clamp(1rem, 5vw, 1.35rem) !important;
+  }
+
+  .favorites {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    display: grid !important;
+    gap: 22px !important;
+  }
+
+  .popup-topbar {
+    grid-template-columns: 70px 1fr 36px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .favorites,
+  .fact-grid,
+  .pinterest-board,
+  .popup-images,
+  .folder-area {
+    grid-template-columns: 1fr !important;
+  }
+
+  .mini-content {
+    padding: 16px !important;
+  }
+
+  .dock-footer {
+    right: 12px !important;
+    bottom: 12px !important;
+  }
+}
