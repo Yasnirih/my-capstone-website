@@ -19,7 +19,6 @@ body {
         radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.45), transparent 32%),
         linear-gradient(135deg, #b88cff, #8d7bff, #b46adf);
     color: #12233d;
-
     animation: pageEnter 0.8s ease forwards;
 }
 
@@ -41,9 +40,6 @@ body.fade-out {
         transform: scale(1);
     }
 }
-
-
-/* MAIN BROWSER */
 
 .browser {
     width: 100%;
@@ -137,9 +133,8 @@ body.fade-out {
 }
 
 .url-bar {
-      width: 60%;
-    min-width: 420px;
-    max-width: 900px;
+    width: min(60%, 900px);
+    min-width: 0;
     height: 48px;
     background: rgba(255, 255, 255, 0.72);
     border-radius: 11px;
@@ -155,10 +150,8 @@ body.fade-out {
     outline: none;
     background: transparent;
     color: #12233d;
-    font-size: 30px;
+    font-size: clamp(1rem, 2.2vw, 1.9rem);
 }
-
-/* BUTTONS */
 
 .go-btn {
     height: 55px;
@@ -167,7 +160,7 @@ body.fade-out {
     background: #12233d;
     color: white;
     font-weight: bold;
-    font-size:20px;
+    font-size: 20px;
 }
 
 .go-btn:hover {
@@ -192,7 +185,7 @@ body.fade-out {
     border-radius: 14px;
     cursor: pointer;
     font-weight: bold;
-    width:150px;
+    width: 150px;
     font-size: 20px;
 }
 
@@ -229,41 +222,31 @@ body.fade-out {
 .desktop {
     width: 100%;
     min-height: calc(100vh - 105px);
-
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding: 55px 30px;
+    padding: 55px 30px 90px;
 }
 
 /* MINI WINDOW */
 
 .mini-window {
-    width: 96%;
-    max-width: 2800px;
-    min-height: 1000px;
-
+    width: min(96%, 1500px);
+    min-height: auto;
     background: rgba(255, 255, 255, 0.22);
     backdrop-filter: blur(18px);
-
     border: 1px solid rgba(255, 255, 255, 0.35);
     border-radius: 28px;
-
     box-shadow: 0 18px 35px rgba(54, 35, 110, 0.22);
-
     overflow: hidden;
 }
 
 .mini-topbar {
     height: 55px;
-
     background: rgba(255, 255, 255, 0.3);
-
     display: flex;
     align-items: center;
     gap: 8px;
-
     padding: 0 20px;
 }
 
@@ -274,92 +257,83 @@ body.fade-out {
 
 .mini-topbar h4 {
     margin-left: 10px;
-
     font-family: "Cormorant Garamond", serif;
-    font-size: 30px;
+    font-size: clamp(1.4rem, 3vw, 1.9rem);
     font-weight: 600;
-
     color: #12233d;
 }
 
-/* MINI WINDOW CONTENT */
+/* ABOUT CONTENT */
 
 .mini-content {
-    padding: 60px;
+    padding: clamp(26px, 5vw, 60px);
 }
 
 .about-layout {
     display: grid;
-    grid-template-columns: 430px 1fr;
-    gap: 65px;
+    grid-template-columns: minmax(260px, 370px) 1fr;
+    gap: clamp(30px, 5vw, 65px);
     align-items: center;
 }
 
 .photo-card {
-    width: 430px;
-
-    background: rgba(255, 255, 255, 0.35);
-
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.4);
     padding: 16px;
+    border-radius: 30px;
+    box-shadow: 0 18px 35px rgba(64, 44, 120, 0.22);
+    transform: rotate(-2deg);
+    transition: 0.25s ease;
+}
 
-    border-radius: 28px;
-
-    box-shadow: 0 12px 26px rgba(64, 44, 120, 0.18);
+.photo-card:hover {
+    transform: rotate(0deg) translateY(-6px);
 }
 
 .profile-image {
     width: 100%;
-
     display: block;
-
     border-radius: 22px;
 }
 
 .fact-grid {
     display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 30px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
 }
 
 .fact-card {
-    min-height: 245px;
-    min-width: 0;
+    min-height: 230px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.35);
-    border-radius: 24px;
-    padding: 32px;
+    min-width: 0;
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 26px;
+    padding: clamp(22px, 3vw, 32px);
     box-shadow: 0 10px 22px rgba(64, 44, 120, 0.16);
-    transition: 0.25s;
+    transition: 0.25s ease;
 }
 
 .fact-card:hover {
-    transform: translateY(-6px);
-    background: rgba(255, 255, 255, 0.48);
+    transform: translateY(-7px);
+    background: rgba(255, 255, 255, 0.52);
+    box-shadow: 0 18px 32px rgba(64, 44, 120, 0.22);
 }
 
 .fact-card h3 {
     font-family: "Great Vibes", cursive;
-
-    font-size: clamp(2.3rem, 3vw, 3.4rem);
-
+    font-size: clamp(2.2rem, 3.2vw, 3.4rem);
     font-weight: 400;
-
     margin-bottom: 14px;
-
     color: #12233d;
 }
 
 .fact-card p {
     font-family: "Cormorant Garamond", serif;
-
-    font-size: clamp(1.4rem, 1.7vw, 1.95rem);
-
+    font-size: clamp(1.15rem, 1.7vw, 1.75rem);
     line-height: 1.45;
-
     font-weight: 600;
-
     color: #12233d;
 }
 
@@ -369,7 +343,7 @@ h1,
 #typingText {
     font-family: "Great Vibes", cursive;
     font-weight: 400;
-    font-size: 100px;
+    font-size: clamp(4rem, 9vw, 6.5rem);
 }
 
 h2,
@@ -397,31 +371,44 @@ img {
     height: auto;
 }
 
+/* FOOTER */
+
+.dock-footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 14px 20px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.22);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 30px rgba(54, 35, 110, 0.2);
+    color: #12233d;
+    font-family: "Life Savers", serif;
+    font-size: 0.95rem;
+    z-index: 9999;
+}
+
 /* TABLETS */
 
 @media (max-width: 1000px) {
     .desktop {
         align-items: flex-start;
-        padding: 45px 24px;
+        padding: 45px 24px 95px;
     }
 
     .mini-window {
         width: 100%;
-        min-height: auto;
-    }
-
-    .mini-content {
-        padding: 38px;
     }
 
     .about-layout {
         grid-template-columns: 1fr;
-        gap: 40px;
+        text-align: center;
     }
 
     .photo-card {
-        margin: 0 auto;
-        max-width: 420px;
+        max-width: 340px;
     }
 
     .fact-grid {
@@ -453,15 +440,21 @@ img {
     }
 
     .url-bar {
+        order: 3;
         width: 100%;
-        min-width: 0;
-        font-size: 12px;
+        height: 42px;
+        gap: 8px;
+    }
+
+    .url-bar input {
+        font-size: 1rem;
     }
 
     .go-btn {
         width: 70px;
         height: 34px;
         font-size: 12px;
+        padding: 0;
     }
 
     .dropdown {
@@ -470,20 +463,43 @@ img {
     }
 
     .dropbtn {
+        width: auto;
         padding: 9px 13px;
         font-size: 13px;
     }
 
     .desktop {
-        padding: 35px 16px;
+        min-height: calc(100vh - 140px);
+        padding: 35px 16px 90px;
+    }
+
+    .mini-window {
+        border-radius: 22px;
     }
 
     .mini-topbar {
         height: 48px;
     }
 
+    .mini-topbar h4 {
+        font-size: 1.2rem;
+    }
+
     .mini-content {
         padding: 22px;
+    }
+
+    .photo-card {
+        max-width: 280px;
+        transform: none;
+    }
+
+    .photo-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .fact-grid {
+        gap: 18px;
     }
 
     .fact-card {
@@ -499,13 +515,20 @@ img {
         font-size: 1.1rem;
         line-height: 1.45;
     }
+
+    .dock-footer {
+        right: 12px;
+        bottom: 12px;
+        padding: 10px 14px;
+        font-size: 0.78rem;
+    }
 }
 
 /* VERY SMALL PHONES */
 
 @media (max-width: 380px) {
     .desktop {
-        padding: 28px 12px;
+        padding: 28px 12px 85px;
     }
 
     .mini-content {
@@ -522,64 +545,5 @@ img {
 
     .fact-card p {
         font-size: 1rem;
-    }
-}
-
-.dock-footer {
-    position: fixed;
-
-    bottom: 20px;
-    right: 20px;
-
-    padding: 14px 20px;
-
-    border-radius: 22px;
-
-    background: rgba(255, 255, 255, 0.22);
-
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-
-    border: 1px solid rgba(255, 255, 255, 0.3);
-
-    box-shadow: 0 10px 30px rgba(54, 35, 110, 0.2);
-
-    color: #12233d;
-
-    font-family: "Life Savers", serif;
-
-    font-size: 0.95rem;
-
-    z-index: 9999;
-}
-
-@media (max-width: 1000px) {
-    .about-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .photo-card {
-        width: 100%;
-        max-width: 420px;
-        margin: 0 auto;
-    }
-
-    .fact-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .mini-window {
-        width: 100%;
-        min-height: auto;
-    }
-
-    .mini-content {
-        padding: 22px;
-    }
-
-    .fact-card {
-        padding: 22px;
     }
 }
