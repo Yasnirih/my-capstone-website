@@ -325,17 +325,13 @@ body.fade-out {
 
 .fact-card {
     min-height: 245px;
-min-width: 600px;
+    min-width: 0;
+    width: 100%;
     background: rgba(255, 255, 255, 0.35);
-
     border-radius: 24px;
-
     padding: 32px;
-
     box-shadow: 0 10px 22px rgba(64, 44, 120, 0.16);
-
     transition: 0.25s;
-    padding-all: 32px;
 }
 
 .fact-card:hover {
@@ -555,4 +551,35 @@ img {
     font-size: 0.95rem;
 
     z-index: 9999;
+}
+
+@media (max-width: 1000px) {
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-card {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .fact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .mini-window {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .mini-content {
+        padding: 22px;
+    }
+
+    .fact-card {
+        padding: 22px;
+    }
 }
