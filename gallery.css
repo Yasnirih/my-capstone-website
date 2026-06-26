@@ -303,8 +303,8 @@ body.fade-out {
 
 .pinterest-board {
     display: grid;
-grid-template-columns: repeat(4, minmax(0, 1fr));    
-gap: 8px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
     width: 100%;
 }
 
@@ -313,12 +313,13 @@ gap: 8px;
 .pin {
     position: relative;
     width: 100%;
+    min-height: 760px;
     overflow: hidden;
     border-radius: 28px;
     background: rgba(255, 255, 255, 0.35);
     box-shadow: 0 12px 26px rgba(64, 44, 120, 0.18);
-border: none;    
-cursor: pointer;
+    border: none;
+    cursor: pointer;
 
     opacity: 0;
     transform: translateY(35px) scale(0.96);
@@ -346,7 +347,7 @@ cursor: pointer;
 
 .pin img {
     width: 100%;
-    height: 860px;
+    height: 500px;
     object-fit: cover;
     object-position: center;
     display: block;
@@ -363,20 +364,21 @@ cursor: pointer;
 
 .pin-text h3 {
     font-family: "Life Savers", serif;
-    font-size: 55px;
+    font-size: clamp(2.2rem, 3vw, 3.3rem);
     font-weight: 400;
     margin-bottom: 10px;
     color: #12233d;
-    white-space: nowrap;
+    line-height: 1.1;
 }
 
 .pin-text p {
     font-family: "Life Savers", serif;
-    font-size: clamp(1.4rem, 1.8vw, 2rem);
-    line-height: 1.45;
+    font-size: clamp(1.3rem, 1.6vw, 1.8rem);
+    line-height: 1.35;
     font-weight: 600;
     color: #12233d;
 }
+
 
 /* POPUP */
 
@@ -508,8 +510,12 @@ input {
     }
 
     .pinterest-board {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 28px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .pin {
+        min-height: 620px;
     }
 
     .pin img {
@@ -518,52 +524,13 @@ input {
 }
 
 @media (max-width: 700px) {
-    .top-bar {
-        height: 140px;
-    }
-
-    .tab {
-        display: none;
-    }
-
-    .toolbar {
-        top: 58px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 0 10px;
-    }
-
-    .url-bar {
-        width: 100%;
-        min-width: 0;
-        height: 42px;
-    }
-
-    .url-bar input {
-        font-size: 13px;
-    }
-
-    .go-btn {
-        height: 38px;
-        width: 70px;
-        font-size: 12px;
-    }
-
-    .desktop {
-        padding: 35px 16px;
-    }
-
-    .mini-topbar {
-        height: 48px;
-    }
-
-    .mini-content {
-        padding: 22px;
-    }
-
     .pinterest-board,
     .popup-images {
         grid-template-columns: 1fr;
+    }
+
+    .pin {
+        min-height: auto;
     }
 
     .pin img {
