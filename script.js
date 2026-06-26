@@ -307,7 +307,7 @@ const galleryData = {
         title: "Events / Work",
         images: [
             "https://cdn.corenexis.com/f/jzfTmZw2bms.png",
-            "https://cdn.corenexis.com/f/hjeQZ7G2Xw5.png",
+            "https://cdn.corenexis.com/f/z0EVEcNIpyP.png",
             "https://cdn.corenexis.com/f/KMRtPLlxE4x.png",
             "https://cdn.corenexis.com/f/MCEoYbCrLYp.png"
         ]
