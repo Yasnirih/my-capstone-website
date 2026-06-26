@@ -303,10 +303,9 @@ body.fade-out {
 
 .pinterest-board {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 42px;
+grid-template-columns: repeat(4, minmax(0, 1fr));    
+gap: 8px;
     width: 100%;
-    align-items: stretch;
 }
 
 /* GALLERY BOXES */
@@ -318,8 +317,8 @@ body.fade-out {
     border-radius: 28px;
     background: rgba(255, 255, 255, 0.35);
     box-shadow: 0 12px 26px rgba(64, 44, 120, 0.18);
-    border: 1px solid rgba(255, 255, 255, 0.45);
-    cursor: pointer;
+border: none;    
+cursor: pointer;
 
     opacity: 0;
     transform: translateY(35px) scale(0.96);
