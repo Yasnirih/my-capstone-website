@@ -306,7 +306,7 @@ body.fade-out {
 
 .fact-card {
     min-height: 230px;
-    width: 100%;
+    width: 150%;
     min-width: 0;
     background: rgba(255, 255, 255, 0.38);
     border-radius: 26px;
@@ -323,7 +323,7 @@ body.fade-out {
 
 .fact-card h3 {
     font-family: "Great Vibes", cursive;
-    font-size: clamp(2.2rem, 3.2vw, 3.4rem);
+    font-size: 45px;
     font-weight: 400;
     margin-bottom: 14px;
     color: #12233d;
