@@ -163,8 +163,8 @@ function openFolder(folderName, clickedFolder) {
                 </div>
 
                 <div class="experience-item">
-                    <img src="images/apprenticeship1.png" alt="Apprenticeship Experience" class="apprenticeship-img">                    
-                    <p>Foundational Training ~ 64+ hour training focused on Accenture’s methodology and team collaboration.</p>
+                    <img src="https://cdn.corenexis.com/f/42eqLN9xmLb.png" alt="Apprenticeship Experience" class="apprenticeship-img">                    
+                    <p>Helped  facilitate the 2024 Cohort Meet & Greet, organizing icebreaker activities designed to build community and encourage collaboration among apprentices.</p>
                 </div>
             </div>
         `,
@@ -299,7 +299,7 @@ const galleryData = {
             "https://cdn.corenexis.com/f/v16H16jhO6a.png",
             "https://cdn.corenexis.com/f/CJDfHilO8PV.png",
             "https://cdn.corenexis.com/f/v7QEstVqPmg.png",
-            "https://cdn.corenexis.com/f/MdxcpT4zhI9.png"
+            "https://cdn.corenexis.com/f/clyEzilsvZN.png"
         ]
     },
 
